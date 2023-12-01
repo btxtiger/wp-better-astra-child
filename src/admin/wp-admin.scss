@@ -1,0 +1,50 @@
+// Contact Form 7 Editor Panel
+.contact-form-editor-panel .CodeMirror {
+   height: calc(100vh - 450px) !important;
+}
+
+// CF7 MULTISTEP
+#cf7mls-app {
+   // Fix wrong active tab color
+   .cf7mls-app-steps .nav-tab-active + a {
+      background-color: #dcdcde;
+   }
+
+   .cf7mls-app-steps .nav-tab:focus, .nav-tab:hover {
+      background-color: #dcdcde;
+      color: #3c434a;
+   }
+
+   .nav-tab-active, .nav-tab-active:focus, .nav-tab-active:focus:active, .nav-tab-active:hover {
+      background: #ead3ba;
+   }
+
+   .cf7mls-app-step-content textarea {
+      height: 700px;
+   }
+}
+
+/*
+ * FIX THE GUTENBERG EDITORS BAD USABILITY
+ */
+.wp-block.is-reusable {
+   border: 2px dashed hotpink;
+   padding: 4px;
+   margin: 4px;
+   .is-reusable {
+      border: none;
+   }
+}
+
+.wp-reusable-block-locked__convert-link {
+   display: none;
+}
+
+/*
+ * FIX THE AWFUL MOBILE PREVIEW
+ */
+.preview-mobile .wp-full-overlay-main {
+   // iPhone 8 Plus dimensions
+   width: 414px;
+   height: 736px;
+}

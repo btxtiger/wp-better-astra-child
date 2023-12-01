@@ -1,0 +1,55 @@
+.rtl {
+   direction: rtl;
+   font-size: 1.125em;
+   line-height: 1.75;
+}
+
+.card {
+   border-radius: var(--form-border-radius, 0.25rem);
+   border: 1px solid var(--ast-border-color);
+   margin-bottom: 1.25rem;
+
+   .card {
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      border-bottom: none;
+
+      .card-header {
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+      }
+   }
+
+   .card-header {
+      border-top-left-radius: var(--form-border-radius, 0.25rem);
+      border-top-right-radius: var(--form-border-radius, 0.25rem);
+      padding: 1.25rem 1.25rem 0.5rem;
+      background-color: var(--ast-comment-inputs-background);
+
+      .card-title {
+         font-size: 1.25rem;
+         font-weight: 600;
+         margin-bottom: 0.5rem;
+      }
+
+      .card-subtitle {
+         font-size: 1rem;
+         font-weight: 600;
+         opacity: 0.75;
+         margin-bottom: 0.25rem;
+      }
+   }
+
+   .card-body {
+      padding: 1.25rem;
+   }
+
+   .card-footer {
+      border-top: 1px solid var(--ast-border-color);
+      padding: 0.5rem 1.25rem 1.25rem;
+      background-color: rgb(109 128 139 / 7%);
+   }
+}

@@ -1,0 +1,43 @@
+.contact-form-editor-panel .CodeMirror {
+  height: calc(100vh - 450px) !important;
+}
+
+#cf7mls-app .cf7mls-app-steps .nav-tab-active + a {
+  background-color: #dcdcde;
+}
+#cf7mls-app .cf7mls-app-steps .nav-tab:focus, #cf7mls-app .nav-tab:hover {
+  background-color: #dcdcde;
+  color: #3c434a;
+}
+#cf7mls-app .nav-tab-active, #cf7mls-app .nav-tab-active:focus, #cf7mls-app .nav-tab-active:focus:active, #cf7mls-app .nav-tab-active:hover {
+  background: #ead3ba;
+}
+#cf7mls-app .cf7mls-app-step-content textarea {
+  height: 700px;
+}
+
+/*
+ * FIX THE GUTENBERG EDITORS BAD USABILITY
+ */
+.wp-block.is-reusable {
+  border: 2px dashed hotpink;
+  padding: 4px;
+  margin: 4px;
+}
+.wp-block.is-reusable .is-reusable {
+  border: none;
+}
+
+.wp-reusable-block-locked__convert-link {
+  display: none;
+}
+
+/*
+ * FIX THE AWFUL MOBILE PREVIEW
+ */
+.preview-mobile .wp-full-overlay-main {
+  width: 414px;
+  height: 736px;
+}
+
+/*# sourceMappingURL=wp-admin.css.map */
