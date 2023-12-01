@@ -30,11 +30,17 @@ h6 {
 }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .entry-content p {
   margin-bottom: 1em;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=wordpress.css.map */

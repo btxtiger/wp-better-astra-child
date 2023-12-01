@@ -176,4 +176,8 @@ select {
    .cf7mls_progress_bar li.active:before {
       background: var(--ast-global-color-0) !important;
    }
+
+   .cf7mls_progress_bar li .cf7mls_progress_bar_title {
+      font-size: 0.75em;
+   }
 }
