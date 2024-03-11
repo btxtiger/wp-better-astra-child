@@ -1,0 +1,55 @@
+name: Build and Release
+
+on:
+   push:
+      branches:
+         - main
+
+jobs:
+   build-and-release:
+      runs-on: ubuntu-latest
+
+      steps:
+         -  name: Checkout code
+            uses: actions/checkout@v2
+
+         -  name: Make build script executable
+            run: chmod +x ./build*.sh
+
+         -  name: Run build script
+            run: ./build.sh
+
+         -  name: Read version from package.json
+            id: package_version
+            run: echo "::set-output name=version::$(jq -r .version package.json)"
+
+         -  name: Load Release Description from README
+            id: readme
+            run: |
+               readme_content=$(cat readme/README-usecase.md)
+               readme_content="${readme_content//'%'/'%25'}"
+               readme_content="${readme_content//$'\n'/'%0A'}"
+               readme_content="${readme_content//$'\r'/'%0D'}"
+               echo "::set-output name=body::$readme_content"
+
+         -  name: Create Release
+            id: create_release
+            uses: actions/create-release@v1
+            env:
+               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            with:
+               tag_name: v${{ steps.package_version.outputs.version }}
+               release_name: Release v${{ steps.package_version.outputs.version }}
+               body: ${{ steps.readme.outputs.body }}
+               draft: false
+               prerelease: false
+
+         -  name: Upload asset
+            uses: actions/upload-release-asset@v1
+            env:
+               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            with:
+               upload_url: ${{ steps.create_release.outputs.upload_url }}
+               asset_path: ./dist/wp-better-astra-child-${{ steps.package_version.outputs.version }}.zip
+               asset_name: wp-better-astra-child-${{ steps.package_version.outputs.version }}.zip
+               asset_content_type: application/zip

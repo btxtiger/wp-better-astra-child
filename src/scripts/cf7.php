@@ -7,11 +7,12 @@ function wrap_cf7_email_body($components, $contact_form, $mail) {
    $body = $components['body'];
    $mailStyle = "
       <style>
-          body { font-size: 16px; }
+          body { font-size: 16px; font-family: Tahoma, 'Helvetica Neue', Arial, sans-serif; }
           table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
           th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-          th { background-color: #f2f2f2; }
-          h1, h2, h3, h4, h5, h6 { margin: 16px 0; }
+          th { background-color: #f8f8f8; font-weight: normal; }
+          td { width: 50%; }
+          h1, h2, h3, h4, h5, h6 { margin-top: 2em; margin-bottom: 1em; font-weight: 600; }
           h1 { font-size: 2em; }
           h2 { font-size: 1.5em; }
           @media screen {
@@ -24,29 +25,7 @@ function wrap_cf7_email_body($components, $contact_form, $mail) {
           }
       </style>
    ";
-   $mailMetaInfo = "
-      <hr />
-      <h3>Absender Information</h3>
-      <table>
-          <tr>
-              <td>Time</td>
-              <td>[_date], [_time]</td>
-          </tr>
-          <tr>
-              <td>URL</td>
-              <td><b>[_post_title]</b> ([_post_url])</td>
-          </tr>
-          <tr>
-              <td>IP</td>
-              <td>[_remote_ip]</td>
-          </tr>
-          <tr>
-              <td>UserAgent</td>
-              <td>[_user_agent]</td>
-          </tr>
-      </table>
-      <p>Diese E-Mail wurde vom Formular von <b>[_site_title]</b> ([_site_url]) gesendet.</p>
-   ";
+   $mailMetaInfo = "";
 
    $mailDoc = "
       <!DOCTYPE html>

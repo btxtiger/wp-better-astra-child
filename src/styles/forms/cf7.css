@@ -1,0 +1,46 @@
+.wpcf7 {
+  --ast-global-color-0: black;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wpcf7 .wpcf7-form-control-wrap {
+  padding: 0.25rem 0 1.25rem;
+}
+.wpcf7 .wpcf7-list-item {
+  margin: 0.25em 1em 0.25em 0;
+  display: block;
+}
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item {
+  display: block;
+}
+.wpcf7 .wpcf7-submit {
+  padding: 0.75rem 1.25rem;
+}
+.wpcf7 textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.wpcf7 h1,
+.wpcf7 h2,
+.wpcf7 h3,
+.wpcf7 h4,
+.wpcf7 h5,
+.wpcf7 h6 {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+.wpcf7 select {
+  font-size: 1.125rem;
+}
+.wpcf7 fieldset {
+  padding: 0;
+}
+.wpcf7 label {
+  font-size: 0.938rem;
+  font-weight: normal;
+}
+.wpcf7 button, .wpcf7 input[type=submit], .wpcf7 input[type=reset], .wpcf7 input[type=button] {
+  border-radius: var(--ast-form-border-radius) !important;
+}
+
+/*# sourceMappingURL=cf7.css.map */

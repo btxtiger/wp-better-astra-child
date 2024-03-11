@@ -1,0 +1,28 @@
+.wpcf7 {
+   .cf7mls {
+      .cf7mls_next.action-button {
+         background-color: var(--ast-global-color-0);
+      }
+
+      .cf7mls_number_step_wrap {
+         .cf7mls_number {
+            // color
+         }
+         .cf7mls_progress_percent {
+            // color
+         }
+      }
+
+      .cf7mls_progress_bar {
+         margin: 1rem auto 1rem !important;
+
+         li.active:before {
+            background: var(--ast-global-color-0) !important;
+         }
+
+         li .cf7mls_progress_bar_title {
+            font-size: 0.75em;
+         }
+      }
+   }
+}

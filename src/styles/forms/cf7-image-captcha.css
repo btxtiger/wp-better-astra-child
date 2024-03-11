@@ -1,0 +1,42 @@
+.wpcf7 .wpcf7-cf7ic .captcha-image {
+  padding: 12px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid var(--ast-border-color) !important;
+  border-radius: var(--ast-form-border-radius) !important;
+  width: 100%;
+  margin-bottom: 1rem !important;
+  background-color: var(--ast-comment-inputs-background);
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic_instructions {
+  font-size: 18px;
+  color: unset;
+  display: block;
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic_instructions > span:first-child {
+  color: #5aab28;
+  font-weight: bold;
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic-icon-wrapper {
+  float: none;
+  color: unset;
+  font-size: 32px;
+  display: block;
+  padding-top: 0.5rem;
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic-icon-wrapper label > i {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic-icon-wrapper label > i::before {
+  font-size: 1.75rem;
+}
+.wpcf7 .wpcf7-cf7ic .captcha-image label > input:checked + *,
+.wpcf7 .wpcf7-cf7ic .captcha-image .captcha-image label > input:focus + * {
+  border-radius: var(--ast-form-border-radius);
+}
+
+/*# sourceMappingURL=cf7-image-captcha.css.map */

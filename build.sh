@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# Remove dist folder
-rm -rf dist
-
 # Create dist folder
-mkdir -p dist/astra-child-jonas
+mkdir -p dist/wp-better-astra-child
+
+# Clear content of dist folder
+rm -rf dist/wp-better-astra-child/*
 
 # Copy files from src to dist/my-plugin
-cp -R src/* dist/astra-child-jonas/
+cp -R src/* dist/wp-better-astra-child/
 
 # Run Gulp task
 gulp
 
 # Create a ZIP file from dist/my-plugin
 cd dist
-zip -r astra-child-jonas.zip astra-child-jonas/
+zip -r wp-better-astra-child.zip wp-better-astra-child/

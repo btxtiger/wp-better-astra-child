@@ -1,0 +1,26 @@
+:root {
+   --ast-comment-inputs-background: #FCFCFC;
+   --ast-form-border-radius: 3px;
+}
+
+// Fix the container sizes for Astra base theme
+#primary {
+   margin: 0 !important;
+   padding: 0 !important;
+
+   @media (max-width: 921px) {
+      .ast-article-single {
+         padding-top: 1em !important;
+         padding-bottom: 1em !important;
+      }
+   }
+}
+
+#content {
+   @media (max-width: 921px) {
+      & > .ast-container {
+         padding-left: 1rem;
+         padding-right: 1rem;
+      }
+   }
+}

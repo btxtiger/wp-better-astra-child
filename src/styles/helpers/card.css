@@ -1,11 +1,6 @@
-.rtl {
-  direction: rtl;
-  font-size: 1.125em;
-  line-height: 1.75;
-}
-
 .card {
-  border-radius: var(--form-border-radius, 0.25rem);
+  --ast-card-header-background: #F9FAFB;
+  border-radius: var(--ast-form-border-radius, 0.25rem);
   border: 1px solid var(--ast-border-color);
   margin-bottom: 1.25rem;
 }
@@ -22,10 +17,10 @@
   border-top-right-radius: 0;
 }
 .card .card-header {
-  border-top-left-radius: var(--form-border-radius, 0.25rem);
-  border-top-right-radius: var(--form-border-radius, 0.25rem);
+  border-top-left-radius: var(--ast-form-border-radius, 0.25rem);
+  border-top-right-radius: var(--ast-form-border-radius, 0.25rem);
   padding: 1.25rem 1.25rem 0.5rem;
-  background-color: var(--ast-comment-inputs-background);
+  background-color: var(--ast-card-header-background);
 }
 .card .card-header .card-title {
   font-size: 1.25rem;
@@ -47,4 +42,4 @@
   background-color: rgba(109, 128, 139, 0.07);
 }
 
-/*# sourceMappingURL=helpers.css.map */
+/*# sourceMappingURL=card.css.map */

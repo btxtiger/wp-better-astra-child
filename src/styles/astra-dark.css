@@ -1,0 +1,95 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ast-dark-primary-color: #c09d53;
+    --ast-dark-primary-contrast-color: #242424;
+    --ast-dark-link-color: #c09d53;
+    --ast-dark-text-color: #cecabd;
+    --ast-dark-background-color: #252525;
+    --ast-dark-background-color-2: #2d2d2d;
+    --ast-dark-input-focus-background-color: #373737;
+    --ast-dark-border-color: #4f4b46;
+    --ast-border-color: var(--ast-dark-border-color);
+    --ast-comment-inputs-background: #2d2d2d !important;
+  }
+  body {
+    background-color: var(--ast-dark-background-color) !important;
+    color: var(--ast-dark-text-color);
+  }
+  body .ast-primary-header-bar {
+    border-color: var(--ast-dark-border-color);
+    background-color: var(--ast-dark-background-color);
+  }
+  body .site-below-footer-wrap {
+    background-color: var(--ast-dark-background-color) !important;
+    border-color: var(--ast-dark-border-color) !important;
+  }
+  body .card {
+    --ast-card-header-background: var(--ast-dark-background-color-2);
+  }
+  body .wpcf7 {
+    --ast-global-color-0: var(--ast-dark-primary-color);
+  }
+  body .wpcf7 .wpcf7-not-valid-tip {
+    color: #ff6b6b;
+  }
+  body .wpcf7 .cf7_mls_count_step {
+    color: var(--ast-dark-primary-contrast-color) !important;
+  }
+  body .wpcf7 .cf7mls_number_step_wrap .cf7mls_number {
+    color: var(--ast-dark-link-color);
+  }
+  body .wpcf7 .cf7mls_number_step_wrap .cf7mls_step_current {
+    color: var(--ast-dark-text-color);
+  }
+  body .ast-footer-copyright {
+    color: var(--ast-dark-text-color);
+  }
+  body .ast-nav-menu .menu-link {
+    background-color: var(--ast-dark-background-color-2) !important;
+  }
+  body header .ast-primary-header-bar {
+    border-color: var(--ast-dark-border-color) !important;
+  }
+  body label {
+    color: var(--ast-dark-text-color);
+  }
+  body input,
+  body textarea,
+  body select {
+    color: var(--ast-dark-text-color) !important;
+    caret-color: var(--ast-dark-text-color);
+  }
+  body input:focus,
+  body textarea:focus,
+  body select:focus {
+    background-color: var(--ast-dark-input-focus-background-color) !important;
+    color: var(--ast-dark-text-color) !important;
+    caret-color: var(--ast-dark-text-color);
+  }
+  body input[type=checkbox], body input[type=radio] {
+    mix-blend-mode: overlay;
+  }
+  body input[type=checkbox]:checked, body input[type=radio]:checked {
+    mix-blend-mode: unset !important;
+  }
+  body button, body input[type=submit], body input[type=reset], body input[type=button] {
+    background-color: var(--ast-dark-primary-color) !important;
+    color: var(--ast-dark-primary-contrast-color) !important;
+  }
+  body button .mobile-menu-toggle-icon svg, body input[type=submit] .mobile-menu-toggle-icon svg, body input[type=reset] .mobile-menu-toggle-icon svg, body input[type=button] .mobile-menu-toggle-icon svg {
+    fill: var(--ast-dark-primary-contrast-color) !important;
+  }
+  body a {
+    color: var(--ast-dark-link-color) !important;
+  }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    color: var(--ast-dark-link-color) !important;
+  }
+}
+
+/*# sourceMappingURL=astra-dark.css.map */

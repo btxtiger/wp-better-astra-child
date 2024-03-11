@@ -1,0 +1,24 @@
+:root {
+  --ast-comment-inputs-background: #FCFCFC;
+  --ast-form-border-radius: 3px;
+}
+
+#primary {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (max-width: 921px) {
+  #primary .ast-article-single {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+  }
+}
+
+@media (max-width: 921px) {
+  #content > .ast-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=astra.css.map */
