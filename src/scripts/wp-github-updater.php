@@ -5,8 +5,8 @@
  * Add this snippet to your theme's functions.php file.
  * Note: The public GitHub API has a rate limit of 60 requests per hour per IP.
  */
-function checkUpdatesFromGithub($transient) {
-   // Config
+add_filter('site_transient_update_themes', function($transient) {
+// Config
    $wpThemeSlug = 'wp-better-astra-child'; // Change this to your theme slug
    $githubRepoSlug = 'btxtiger/wp-better-astra-child'; // Change this to your GitHub repo slug
    $githubRepoUrl = "https://github.com/$githubRepoSlug";
@@ -88,5 +88,4 @@ function checkUpdatesFromGithub($transient) {
    }
 
    return $transient;
-}
-add_filter('site_transient_update_themes', 'checkUpdatesFromGithub');
+});
