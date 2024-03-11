@@ -31,7 +31,6 @@ jobs:
             with:
                tag_name: v${{ steps.package_version.outputs.version }}
                release_name: Release v${{ steps.package_version.outputs.version }}
-               body: ${{ steps.readme.outputs.body }}
                draft: false
                prerelease: false
 
