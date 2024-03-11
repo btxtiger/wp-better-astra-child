@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Extract version from package.json
+VERSION=$(jq -r .version ../package.json)
+
 # Create dist folder
 mkdir -p dist/wp-better-astra-child
 
@@ -12,6 +15,8 @@ cp -R src/* dist/wp-better-astra-child/
 # Run Gulp task
 gulp
 
-# Create a ZIP file from dist/my-plugin
+# Go to the dist directory
 cd dist
-zip -r wp-better-astra-child.zip wp-better-astra-child/
+
+# Create a ZIP file from dist/my-plugin
+zip -r wp-better-astra-child-$VERSION.zip wp-better-astra-child/
