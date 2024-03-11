@@ -11,7 +11,7 @@
 /**
  * Define Constants
  */
-define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', '1.0.0');
+define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', '{{ package.version }}');
 
 require_once get_stylesheet_directory() . '/scripts/fontawesome.php';
 require_once get_stylesheet_directory() . '/scripts/astra.php';
