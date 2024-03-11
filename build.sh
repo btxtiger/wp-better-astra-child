@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Extract version from package.json
-VERSION=$(jq -r .version ../package.json)
+VERSION=$(node -p -e "require('./package.json').version")
 
 # Create dist folder
 mkdir -p dist/wp-better-astra-child
 
-# Clear content of dist folder
+# Clear Content Of Dist Folder
 rm -rf dist/wp-better-astra-child/*
 
 # Copy files from src to dist/my-plugin

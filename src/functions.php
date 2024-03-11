@@ -18,3 +18,4 @@ require_once get_stylesheet_directory() . '/scripts/astra.php';
 require_once get_stylesheet_directory() . '/scripts/cf7.php';
 require_once get_stylesheet_directory() . '/scripts/cf7-editor.php';
 require_once get_stylesheet_directory() . '/scripts/wp-admin.php';
+require_once get_stylesheet_directory() . '/scripts/wp-github-updater.php';
