@@ -3,8 +3,8 @@
 @import "libraries/accordion.css";
 .card {
   --ast-card-header-background: #F9FAFB;
-  border-radius: var(--ast-form-border-radius, 0.25rem);
-  border: 1px solid var(--ast-border-color);
+  border-radius: var(--astc-form-border-radius, 0.25rem);
+  border: 1px solid var(--astc-form-input-outline-inactive);
   margin-bottom: 1.25rem;
 }
 .card .card {
@@ -20,10 +20,10 @@
   border-top-right-radius: 0;
 }
 .card .card-header {
-  border-top-left-radius: var(--ast-form-border-radius, 0.25rem);
-  border-top-right-radius: var(--ast-form-border-radius, 0.25rem);
+  border-top-left-radius: var(--astc-form-border-radius, 0.25rem);
+  border-top-right-radius: var(--astc-form-border-radius, 0.25rem);
   padding: 1.25rem 1.25rem 0.5rem;
-  background-color: var(--ast-card-header-background);
+  background-color: var(--astc-layer-background-1);
 }
 .card .card-header .card-title {
   font-size: 1.25rem;
@@ -40,7 +40,7 @@
   padding: 1.25rem;
 }
 .card .card-footer {
-  border-top: 1px solid var(--ast-border-color);
+  border-top: 1px solid var(--astc-form-input-outline-inactive);
   padding: 0.5rem 1.25rem 1.25rem;
   background-color: rgba(109, 128, 139, 0.07);
 }
@@ -86,7 +86,7 @@ h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h1, h2 + h2, h2 + h3,
 
 body {
   font-size: 1rem;
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .entry-content p {
@@ -162,71 +162,56 @@ code {
 }
 
 body.dark {
-  background-color: var(--ast-dark-background-color) !important;
-  color: var(--ast-dark-text-color);
-}
-body.dark :root {
-  --ast-dark-primary-color: #c09d53;
-  --ast-dark-primary-contrast-color: #242424;
-  --ast-dark-link-color: #c09d53;
-  --ast-dark-text-color: #cecabd;
-  --ast-dark-background-color: #252525;
-  --ast-dark-background-color-2: #2d2d2d;
-  --ast-dark-input-focus-background-color: #373737;
-  --ast-dark-border-color: #4f4b46;
-  --ast-border-color: var(--ast-dark-border-color);
-  --ast-comment-inputs-background: #2d2d2d !important;
+  background-color: var(--astc-site-background) !important;
+  color: var(--astc-text-normal);
 }
 body.dark .ast-primary-header-bar {
-  border-color: var(--ast-dark-border-color);
-  background-color: var(--ast-dark-background-color);
+  border-color: var(--astc-border-color);
+  background-color: var(--astc-site-background);
 }
 body.dark .site-below-footer-wrap {
-  background-color: var(--ast-dark-background-color) !important;
-  border-color: var(--ast-dark-border-color) !important;
+  background-color: var(--astc-site-background) !important;
+  border-color: var(--astc-border-color) !important;
 }
-body.dark .card {
-  --ast-card-header-background: var(--ast-dark-background-color-2);
-}
-body.dark .wpcf7 {
-  --ast-global-color-0: var(--ast-dark-primary-color);
+body.dark .card .card-header {
+  background: var(--astc-layer-background-3);
 }
 body.dark .wpcf7 .wpcf7-not-valid-tip {
   color: #ff6b6b;
 }
 body.dark .wpcf7 .cf7_mls_count_step {
-  color: var(--ast-dark-primary-contrast-color) !important;
+  color: var(--astc-primary-contrast) !important;
 }
 body.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_number {
-  color: var(--ast-dark-link-color);
+  color: var(--astc-secondary);
 }
 body.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_step_current {
-  color: var(--ast-dark-text-color);
+  color: var(--astc-text-normal);
 }
 body.dark .ast-footer-copyright {
-  color: var(--ast-dark-text-color);
+  color: var(--astc-text-normal);
 }
 body.dark .ast-nav-menu .menu-link {
-  background-color: var(--ast-dark-background-color-2) !important;
+  background-color: var(--astc-layer-background-2) !important;
 }
 body.dark header .ast-primary-header-bar {
-  border-color: var(--ast-dark-border-color) !important;
+  border-color: var(--astc-border-color) !important;
 }
 body.dark label {
-  color: var(--ast-dark-text-color);
+  color: var(--astc-text-normal);
 }
 body.dark input,
 body.dark textarea,
 body.dark select {
-  color: var(--ast-dark-text-color) !important;
-  caret-color: var(--ast-dark-text-color);
+  color: var(--astc-text-normal) !important;
+  caret-color: var(--astc-text-normal);
 }
 body.dark input:focus,
 body.dark textarea:focus,
 body.dark select:focus {
-  background-color: var(--ast-dark-input-focus-background-color) !important;
-  color: var(--ast-dark-text-color) !important;
-  caret-color: var(--ast-dark-text-color);
+  background-color: var(--astc-form-input-background-focus) !important;
+  color: var(--astc-text-normal) !important;
+  caret-color: var(--astc-text-normal);
 }
 body.dark input[type=checkbox], body.dark input[type=radio] {
   mix-blend-mode: overlay;
@@ -235,14 +220,14 @@ body.dark input[type=checkbox]:checked, body.dark input[type=radio]:checked {
   mix-blend-mode: unset !important;
 }
 body.dark button, body.dark input[type=submit], body.dark input[type=reset], body.dark input[type=button] {
-  background-color: var(--ast-dark-primary-color) !important;
-  color: var(--ast-dark-primary-contrast-color) !important;
+  background-color: var(--astc-primary) !important;
+  color: var(--astc-primary-contrast) !important;
 }
 body.dark button .mobile-menu-toggle-icon svg, body.dark input[type=submit] .mobile-menu-toggle-icon svg, body.dark input[type=reset] .mobile-menu-toggle-icon svg, body.dark input[type=button] .mobile-menu-toggle-icon svg {
-  fill: var(--ast-dark-primary-contrast-color) !important;
+  fill: var(--astc-primary-contrast) !important;
 }
 body.dark a {
-  color: var(--ast-dark-link-color) !important;
+  color: var(--astc-primary) !important;
 }
 body.dark h1,
 body.dark h2,
@@ -250,14 +235,14 @@ body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6 {
-  color: var(--ast-dark-link-color) !important;
+  color: var(--astc-primary) !important;
 }
 body.dark #ast-mobile-site-navigation button.ast-menu-toggle {
   background-color: transparent !important;
   color: white !important;
 }
 body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner {
-  background-color: var(--ast-dark-background-color-2) !important;
+  background-color: var(--astc-layer-background-2) !important;
 }
 body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header {
   padding: 1rem 20px;
@@ -270,22 +255,22 @@ body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-he
   justify-content: center;
 }
 body.dark .cf7mls_progress_bar_percent {
-  background-color: var(--ast-dark-background-color-2);
+  background-color: var(--astc-layer-background-2);
 }
 body.dark .widget_search .search-form .search-field {
-  background-color: var(--ast-dark-background-color-2);
+  background-color: var(--astc-layer-background-2);
 }
 body.dark :root {
   --ast-dark-danger-text-color: #ff6b6b;
 }
 body.dark .wpcf7-not-valid-tip {
-  color: var(--ast-dark-danger-text-color);
+  color: var(--astc-color-danger);
 }
 body.dark .wpcf7-validation-errors {
-  color: var(--ast-dark-danger-text-color) !important;
+  color: var(--astc-color-danger) !important;
 }
-body.dark .wpcf7-icon-wraning {
-  fill: var(--ast-dark-danger-text-color) !important;
+body.dark .wpcf7-icon-wraning, body.dark .wpcf7-icon-warning {
+  fill: var(--astc-color-danger) !important;
 }
 body.dark .ast-narrow-container .site-content, body.dark #primary .error-404, body.dark .ast-separate-container .ast-article-inner {
   background-color: unset;
@@ -314,12 +299,12 @@ input[type=date],
 input[type=url],
 select,
 textarea {
-  border-radius: var(--ast-form-border-radius);
+  border-radius: var(--astc-form-border-radius);
   transition: all 0ms;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--ast-border-color);
-  background: var(--ast-comment-inputs-background);
+  border-color: var(--astc-form-input-outline-inactive);
+  background: var(--astc-form-input-background-inactive);
   caret-color: #444444;
   box-shadow: none !important;
 }
@@ -334,10 +319,10 @@ input[type=date]:focus,
 input[type=url]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid var(--ast-global-color-0) !important;
-  box-shadow: 0 0 0 1px inset var(--ast-global-color-0) !important;
+  border: 1px solid var(--astc-form-accent-color) !important;
+  box-shadow: 0 0 0 1px inset var(--astc-form-accent-color) !important;
   transition: all 0ms;
-  background-color: #fff;
+  background-color: var(--astc-form-input-background-focus);
 }
 
 input[type=email],
@@ -355,12 +340,12 @@ input[type=date] {
 }
 
 input[type=submit] {
-  border-radius: var(--ast-form-border-radius);
+  border-radius: var(--astc-form-border-radius);
 }
 
 input[type=checkbox],
 input[type=radio] {
-  accent-color: var(--ast-global-color-0);
+  accent-color: var(--astc-form-accent-color);
 }
 
 select {
@@ -371,7 +356,7 @@ select {
   background-size: 12px;
   background-position: calc(100% - 20px) 19px;
   background-repeat: no-repeat;
-  background-color: var(--ast-comment-inputs-background);
+  background-color: var(--astc-form-input-background-inactive);
   line-height: 1.5;
   font-size: 1rem !important;
 }
@@ -422,19 +407,19 @@ label {
   font-weight: normal;
 }
 .wpcf7 button, .wpcf7 input[type=submit], .wpcf7 input[type=reset], .wpcf7 input[type=button] {
-  border-radius: var(--ast-form-border-radius) !important;
+  border-radius: var(--astc-form-border-radius) !important;
 }
 
 .wpcf7 .codedropz-upload-handler {
-  border-radius: var(--ast-form-border-radius) !important;
+  border-radius: var(--astc-form-border-radius) !important;
 }
 .wpcf7 .codedropz-upload-handler .codedropz-upload-container {
-  background-color: var(--ast-comment-inputs-background);
+  background-color: var(--astc-form-input-background-inactive);
 }
 
 .wpcf7 .digital_signature-pad {
-  border: 3px double var(--ast-border-color);
-  border-radius: var(--ast-form-border-radius);
+  border: 3px double var(--astc-form-input-outline-inactive);
+  border-radius: var(--astc-form-border-radius);
 }
 .wpcf7 .dscf7_signature input.clearButton {
   left: 2px;
@@ -444,11 +429,11 @@ label {
   padding: 12px;
   display: inline-block;
   text-align: center;
-  border: 1px solid var(--ast-border-color) !important;
-  border-radius: var(--ast-form-border-radius) !important;
+  border: 1px solid var(--astc-form-input-outline-inactive) !important;
+  border-radius: var(--astc-form-border-radius) !important;
   width: 100%;
   margin-bottom: 1rem !important;
-  background-color: var(--ast-comment-inputs-background);
+  background-color: var(--astc-form-input-background-inactive);
 }
 .wpcf7 .wpcf7-cf7ic .captcha-image .cf7ic_instructions {
   font-size: 18px;
@@ -478,17 +463,17 @@ label {
 }
 .wpcf7 .wpcf7-cf7ic .captcha-image label > input:checked + *,
 .wpcf7 .wpcf7-cf7ic .captcha-image .captcha-image label > input:focus + * {
-  border-radius: var(--ast-form-border-radius);
+  border-radius: var(--astc-form-border-radius);
 }
 
 .wpcf7 .cf7mls .cf7mls_next.action-button {
-  background-color: var(--ast-global-color-0);
+  background-color: var(--astc-form-accent-color);
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar {
   margin: 1rem auto 1rem !important;
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li.active:before {
-  background: var(--ast-global-color-0) !important;
+  background: var(--astc-form-accent-color) !important;
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li .cf7mls_progress_bar_title {
   font-size: 0.75em;

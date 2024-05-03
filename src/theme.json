@@ -1,7 +1,6 @@
 {
    "version": 2,
    "settings": {
-
       "color": {
          "defaultPalette": false,
          "custom": false,
@@ -72,12 +71,12 @@
 
             {
                "slug": "text-dark",
-               "color": "var(--astc-text-dark)",
+               "color": "var(--astc-text-normal)",
                "name": "Text Dark"
             },
             {
                "slug": "text-light",
-               "color": "var(--astc-text-light)",
+               "color": "var(--astc-text-inverse)",
                "name": "Text Light"
             },
 
@@ -88,29 +87,59 @@
                "name": "Info"
             },
             {
+               "slug": "info-background",
+               "color": "var(--astc-background-info)",
+               "name": "Info Background"
+            },
+
+            {
                "slug": "success",
                "color": "var(--astc-color-success)",
                "name": "Success"
             },
+            {
+               "slug": "success-background",
+               "color": "var(--astc-background-success)",
+               "name": "Success Background"
+            },
+
             {
                "slug": "danger",
                "color": "var(--astc-color-danger)",
                "name": "Danger"
             },
             {
+               "slug": "danger-background",
+               "color": "var(--astc-background-danger)",
+               "name": "Danger Background"
+            },
+
+            {
                "slug": "warning",
                "color": "var(--astc-color-warning)",
                "name": "Warning"
+            },
+            {
+               "slug": "warning-background",
+               "color": "var(--astc-background-warning)",
+               "name": "Warning Background"
             },
 
 
 
 
             {
-               "slug": "style-background-white",
-               "color": "var(--astc-style-background-white)",
-               "name": "White Background"
+               "slug": "style-force-black",
+               "color": "#FFFFFF",
+               "name": "!!Force White"
             },
+            {
+               "slug": "style-force-black",
+               "color": "#000000",
+               "name": "!!Force Black"
+            },
+
+
             {
                "slug": "style-background-1",
                "color": "var(--astc-style-background-1)",

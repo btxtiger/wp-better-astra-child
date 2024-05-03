@@ -2,13 +2,13 @@
   --astc-text-dark: #1E2019;
   --astc-text-light: #F7F7F7;
   --astc-primary: #318A5F;
-  --astc-primary-contrast-text: var(--astc-text-light);
+  --astc-primary-contrast: var(--astc-text-light);
   --astc-primary-hover: #2A7551;
   --astc-primary-active: #236445;
   --astc-primary-dark: #236445;
   --astc-primary-light: #389F6D;
   --astc-secondary: #C09D53;
-  --astc-secondary-contrast-text: var(--astc-text-light);
+  --astc-secondary-contrast: var(--astc-text-light);
   --astc-secondary-hover: #AB883F;
   --astc-secondary-active: #917435;
   --astc-secondary-dark: #917435;

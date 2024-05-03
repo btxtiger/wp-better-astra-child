@@ -1,8 +1,8 @@
 .card {
    --ast-card-header-background: #F9FAFB;
 
-   border-radius: var(--ast-form-border-radius, 0.25rem);
-   border: 1px solid var(--ast-border-color);
+   border-radius: var(--astc-form-border-radius, 0.25rem);
+   border: 1px solid var(--astc-form-input-outline-inactive);
    margin-bottom: 1.25rem;
 
    .card {
@@ -20,10 +20,10 @@
    }
 
    .card-header {
-      border-top-left-radius: var(--ast-form-border-radius, 0.25rem);
-      border-top-right-radius: var(--ast-form-border-radius, 0.25rem);
+      border-top-left-radius: var(--astc-form-border-radius, 0.25rem);
+      border-top-right-radius: var(--astc-form-border-radius, 0.25rem);
       padding: 1.25rem 1.25rem 0.5rem;
-      background-color: var(--ast-card-header-background);
+      background-color: var(--astc-layer-background-1);
 
       .card-title {
          font-size: 1.25rem;
@@ -44,7 +44,7 @@
    }
 
    .card-footer {
-      border-top: 1px solid var(--ast-border-color);
+      border-top: 1px solid var(--astc-form-input-outline-inactive);
       padding: 0.5rem 1.25rem 1.25rem;
       background-color: rgb(109 128 139 / 7%);
    }

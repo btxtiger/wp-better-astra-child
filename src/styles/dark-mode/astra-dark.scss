@@ -1,85 +1,68 @@
 body.dark {
-      :root {
-         --ast-dark-primary-color: #c09d53;
-         --ast-dark-primary-contrast-color: #242424;
-         --ast-dark-link-color: #c09d53;
-         --ast-dark-text-color: #cecabd;
-
-         --ast-dark-background-color: #252525;
-         --ast-dark-background-color-2: #2d2d2d;
-         --ast-dark-input-focus-background-color: #373737;
-         --ast-dark-border-color: #4f4b46;
-
-         --ast-border-color: var(--ast-dark-border-color);
-         --ast-comment-inputs-background: #2d2d2d !important;
-      }
-
-      background-color: var(--ast-dark-background-color) !important;
-      color: var(--ast-dark-text-color);
+      background-color: var(--astc-site-background) !important;
+      color: var(--astc-text-normal);
 
       .ast-primary-header-bar {
-         border-color: var(--ast-dark-border-color);
-         background-color: var(--ast-dark-background-color);
+         border-color: var(--astc-border-color);
+         background-color: var(--astc-site-background);
       }
 
       .site-below-footer-wrap {
-         background-color: var(--ast-dark-background-color) !important;
-         border-color: var(--ast-dark-border-color) !important;
+         background-color: var(--astc-site-background) !important;
+         border-color: var(--astc-border-color) !important;
       }
 
-      .card {
-         --ast-card-header-background: var(--ast-dark-background-color-2);
+      .card .card-header {
+         background: var(--astc-layer-background-3);
       }
 
       .wpcf7 {
-         --ast-global-color-0: var(--ast-dark-primary-color);
-
          .wpcf7-not-valid-tip {
             color: #ff6b6b;
          }
 
          .cf7_mls_count_step {
-            color: var(--ast-dark-primary-contrast-color) !important;
+            color: var(--astc-primary-contrast) !important;
          }
 
          .cf7mls_number_step_wrap {
             .cf7mls_number {
-               color: var(--ast-dark-link-color);
+               color: var(--astc-secondary);
             }
             .cf7mls_step_current {
-               color: var(--ast-dark-text-color);
+               color: var(--astc-text-normal);
             }
          }
       }
 
       .ast-footer-copyright {
-         color: var(--ast-dark-text-color);
+         color: var(--astc-text-normal);
       }
 
       .ast-nav-menu .menu-link {
-         background-color: var(--ast-dark-background-color-2) !important;
+         background-color: var(--astc-layer-background-2) !important;
       }
 
       header {
          .ast-primary-header-bar {
-            border-color: var(--ast-dark-border-color) !important;
+            border-color: var(--astc-border-color) !important;
          }
       }
 
       label {
-         color: var(--ast-dark-text-color);
+         color: var(--astc-text-normal);
       }
 
       input,
       textarea,
       select {
-         color: var(--ast-dark-text-color) !important;
-         caret-color: var(--ast-dark-text-color);
+         color: var(--astc-text-normal) !important;
+         caret-color: var(--astc-text-normal);
 
          &:focus {
-            background-color: var(--ast-dark-input-focus-background-color) !important;
-            color: var(--ast-dark-text-color) !important;
-            caret-color: var(--ast-dark-text-color);
+            background-color: var(--astc-form-input-background-focus) !important;
+            color: var(--astc-text-normal) !important;
+            caret-color: var(--astc-text-normal);
          }
       }
 
@@ -92,16 +75,16 @@ body.dark {
       }
 
       button, input[type=submit], input[type=reset], input[type=button] {
-         background-color: var(--ast-dark-primary-color) !important;
-         color: var(--ast-dark-primary-contrast-color) !important;
+         background-color: var(--astc-primary) !important;
+         color: var(--astc-primary-contrast) !important;
 
          .mobile-menu-toggle-icon svg {
-            fill: var(--ast-dark-primary-contrast-color) !important;
+            fill: var(--astc-primary-contrast) !important;
          }
       }
 
       a {
-         color: var(--ast-dark-link-color) !important;
+         color: var(--astc-primary) !important;
       }
 
       h1,
@@ -110,7 +93,7 @@ body.dark {
       h4,
       h5,
       h6 {
-         color: var(--ast-dark-link-color) !important;
+         color: var(--astc-primary) !important;
       }
 
 
@@ -122,7 +105,7 @@ body.dark {
 
    #ast-mobile-popup-wrapper {
       .ast-mobile-popup-inner {
-         background-color: var(--ast-dark-background-color-2) !important;
+         background-color: var(--astc-layer-background-2) !important;
 
          .ast-mobile-popup-header {
             padding: 1rem 20px;
@@ -139,10 +122,10 @@ body.dark {
    }
 
    .cf7mls_progress_bar_percent {
-      background-color: var(--ast-dark-background-color-2);
+      background-color: var(--astc-layer-background-2);
    }
    .widget_search .search-form .search-field {
-      background-color: var(--ast-dark-background-color-2);
+      background-color: var(--astc-layer-background-2);
    }
 
 
@@ -150,13 +133,13 @@ body.dark {
       --ast-dark-danger-text-color: #ff6b6b;
    }
    .wpcf7-not-valid-tip {
-      color: var(--ast-dark-danger-text-color);
+      color: var(--astc-color-danger);
    }
    .wpcf7-validation-errors {
-      color: var(--ast-dark-danger-text-color) !important;
+      color: var(--astc-color-danger) !important;
    }
-   .wpcf7-icon-wraning {
-      fill: var(--ast-dark-danger-text-color) !important;
+   .wpcf7-icon-wraning, .wpcf7-icon-warning {
+      fill: var(--astc-color-danger) !important;
    }
 
    .ast-narrow-container .site-content, #primary .error-404, .ast-separate-container .ast-article-inner {

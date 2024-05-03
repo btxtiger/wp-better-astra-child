@@ -5,11 +5,11 @@
          display: inline-block;
          text-align: center;
 
-         border: 1px solid var(--ast-border-color) !important;
-         border-radius: var(--ast-form-border-radius) !important;
+         border: 1px solid var(--astc-form-input-outline-inactive) !important;
+         border-radius: var(--astc-form-border-radius) !important;
          width: 100%;
          margin-bottom: 1rem !important;
-         background-color: var(--ast-comment-inputs-background);
+         background-color: var(--astc-form-input-background-inactive);
 
          .cf7ic_instructions {
             font-size: 18px;
@@ -44,7 +44,7 @@
 
          label > input:checked + *,
          .captcha-image label > input:focus + * {
-            border-radius: var(--ast-form-border-radius);
+            border-radius: var(--astc-form-border-radius);
          }
       }
    }

@@ -6,9 +6,6 @@
 add_filter('astra_stretched_layout_with_spacing', '__return_false');
 add_filter('run_wptexturize', '__return_false');
 
-// add_theme_support( 'disable-custom-colors' );
-
-
 /**
  * Enqueue styles
  */

@@ -1,0 +1,65 @@
+body.dark {
+   // Main Colors
+   --astc-text-normal: #dfe4dd; // On Surface
+   --astc-text-inverse: #2c322d; // Inverse On Surface
+
+   // Primary
+   --astc-primary: #91d5ac; // Primary (Original or Generated)
+   --astc-primary-contrast: #003921; // On Primary
+   --astc-primary-hover: #005e37; // 15% Brighter
+   --astc-primary-active: #008547; // 30% Brighter
+
+   --astc-primary-dark: #005e37;
+   --astc-primary-light: #008547;
+
+   // Secondary
+   --astc-secondary: #eac16c;
+   --astc-secondary-contrast: #402d00; // On Secondary
+   --astc-secondary-hover: #c4a15a; // 15% Darker
+   --astc-secondary-active: #9e8249; // 30% Darker
+
+   --astc-secondary-dark: #c4a15a;
+   --astc-secondary-light: #9e8249;
+
+   // Events
+   --astc-color-info: #1e5a6c;
+   --astc-background-info: #2a3942;
+   --astc-text-info: #a7cfd8;
+
+   --astc-color-success: #1d6042;
+   --astc-background-success: #2a3d33;
+   --astc-text-success: #a0cbb0;
+
+   --astc-color-danger: #8a2c29;
+   --astc-background-danger: #3d2726;
+   --astc-text-danger: #f2b8b5;
+
+   --astc-color-warning: #b38b00;
+   --astc-background-warning: #403d2f;
+   --astc-text-warning: #ffcf00;
+
+   // Forms
+   --astc-form-accent-color: var(--astc-primary);
+   --astc-form-input-outline-inactive: #4f4b46;
+   --astc-form-input-background-inactive: #212422;
+   --astc-form-input-background-focus: #373737;
+   --astc-form-border-radius: 12px;
+
+   // Misc
+   --astc-border-color: var(--astc-form-input-outline-inactive);
+   --astc-site-background: #191c1a;
+
+   // Material Elevating Layer Backgrounds
+   --astc-layer-background-1: #0f1511; // Surface
+   --astc-layer-background-2: #171d19; // Surface Container Low
+   --astc-layer-background-3: #1b211d; // Surface Container
+   --astc-layer-background-4: #262b27; // Surface Container High
+   --astc-layer-background-5: #303632; // Surface Container Highest
+
+   // Content Background Colors
+   --astc-style-background-1: #045233; // Primary Container (WP Primary)
+   --astc-style-background-2: #374b3e; // Secondary Container (generated)
+   --astc-style-background-3: #5c4300; // Tertiary Container (WP Secondary)
+   --astc-style-background-4: #93000a; // Error Container
+   --astc-style-background-5: #dfe4dd; // Inverse Surface
+}

@@ -1,7 +1,7 @@
 .wpcf7 {
    .digital_signature-pad {
-      border: 3px double var(--ast-border-color);
-      border-radius: var(--ast-form-border-radius);
+      border: 3px double var(--astc-form-input-outline-inactive);
+      border-radius: var(--astc-form-border-radius);
    }
 
    .dscf7_signature input.clearButton {

@@ -1,9 +1,9 @@
 .wpcf7 {
    .codedropz-upload-handler {
-      border-radius: var(--ast-form-border-radius) !important;
+      border-radius: var(--astc-form-border-radius) !important;
 
       .codedropz-upload-container {
-         background-color: var(--ast-comment-inputs-background);
+         background-color: var(--astc-form-input-background-inactive);
       }
    }
 }

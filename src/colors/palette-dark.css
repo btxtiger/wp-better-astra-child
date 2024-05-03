@@ -1,0 +1,47 @@
+body.dark {
+  --astc-text-dark: #dfe4dd;
+  --astc-text-light: #2c322d;
+  --astc-primary: #91d5ac;
+  --astc-primary-contrast: #003921;
+  --astc-primary-hover: #005e37;
+  --astc-primary-active: #008547;
+  --astc-primary-dark: #005e37;
+  --astc-primary-light: #008547;
+  --astc-secondary: #eac16c;
+  --astc-secondary-contrast: #402d00;
+  --astc-secondary-hover: #c4a15a;
+  --astc-secondary-active: #9e8249;
+  --astc-secondary-dark: #c4a15a;
+  --astc-secondary-light: #9e8249;
+  --astc-color-info: #38aecc;
+  --astc-background-info: #cfe1e6;
+  --astc-text-info: #226d80;
+  --astc-color-success: #318a5f;
+  --astc-background-success: #cfe6da;
+  --astc-text-success: #2e8058;
+  --astc-color-danger: #db504a;
+  --astc-background-danger: #802e2b;
+  --astc-text-danger: #e6d0cf;
+  --astc-color-warning: #ffcf00;
+  --astc-background-warning: #e6e1cf;
+  --astc-text-warning: #806800;
+  --astc-form-accent-color: black;
+  --astc-form-input-outline-inactive: #d1d5db;
+  --astc-form-input-background-inactive: #fcfcfc;
+  --astc-form-input-background-focus: white;
+  --astc-form-border-radius: 12px;
+  --astc-border-color: var(--astc-form-input-outline-inactive);
+  --astc-layer-background-1: #0f1511;
+  --astc-layer-background-2: #171d19;
+  --astc-layer-background-3: #1b211d;
+  --astc-layer-background-4: #262b27;
+  --astc-layer-background-5: #303632;
+  --astc-style-background-white: white;
+  --astc-style-background-1: #045233;
+  --astc-style-background-2: #374b3e;
+  --astc-style-background-3: #5c4300;
+  --astc-style-background-4: #93000a;
+  --astc-style-background-5: #dfe4dd;
+}
+
+/*# sourceMappingURL=palette-dark.css.map */
