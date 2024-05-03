@@ -26,4 +26,4 @@ sed -i'' -e "s/{{ package.version }}/$VERSION/g" "$releaseDir/functions.php"
 cd dist
 
 # Create a ZIP file from dist/my-plugin
-# zip -r wp-better-astra-child-$VERSION.zip wp-better-astra-child/
+zip -r wp-better-astra-child-$VERSION.zip wp-better-astra-child/

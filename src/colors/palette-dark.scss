@@ -1,3 +1,4 @@
+// Check https://material-foundation.github.io/material-theme-builder/ to build your own theme
 body.dark {
    // Main Colors
    --astc-text-normal: #dfe4dd; // On Surface
@@ -6,8 +7,8 @@ body.dark {
    // Primary
    --astc-primary: #91d5ac; // Primary (Original or Generated)
    --astc-primary-contrast: #003921; // On Primary
-   --astc-primary-hover: #005e37; // 15% Brighter
-   --astc-primary-active: #008547; // 30% Brighter
+   --astc-primary-hover: #76b08d; // 15% Darker
+   --astc-primary-active: #5e8a6f; // 30% Darker
 
    --astc-primary-dark: #005e37;
    --astc-primary-light: #008547;
