@@ -1,0 +1,199 @@
+{
+   "version": 2,
+   "settings": {
+
+      "color": {
+         "defaultPalette": false,
+         "custom": false,
+         "defaultGradients": false,
+         "gradients": [
+            {
+               "slug": "gradient-primary",
+               "name": "Primary",
+               "gradient": "linear-gradient(90deg, #6a82fb, #fc5c7d)"
+            },
+            {
+               "slug": "gradient-secondary",
+               "name": "Secondary",
+               "gradient": "linear-gradient(90deg, #00b4db, #0083b0)"
+            },
+            {
+               "slug": "gradient-info",
+               "name": "Info",
+               "gradient": "linear-gradient(90deg, #2193b0, #6dd5ed)"
+            },
+            {
+               "slug": "gradient-success",
+               "name": "Success",
+               "gradient": "linear-gradient(90deg, #add100, #7b920a)"
+            },
+            {
+               "slug": "gradient-danger",
+               "name": "Danger",
+               "gradient": "linear-gradient(90deg, #ff416c, #ff4b2b)"
+            },
+            {
+               "slug": "gradient-warning",
+               "name": "Warning",
+               "gradient": "linear-gradient(90deg, #ff8700, #ffd300)"
+            }
+         ],
+         "palette": [
+            {
+               "slug": "primary",
+               "color": "var(--astc-primary)",
+               "name": "Primary"
+            },
+            {
+               "slug": "primary-hover",
+               "color": "var(--astc-primary-hover)",
+               "name": "Primary Hover"
+            },
+            {
+               "slug": "primary-active",
+               "color": "var(--astc-primary-active)",
+               "name": "Primary Active"
+            },
+            {
+               "slug": "secondary",
+               "color": "var(--astc-secondary)",
+               "name": "Secondary"
+            },
+            {
+               "slug": "secondary-hover",
+               "color": "var(--astc-secondary-hover)",
+               "name": "Secondary Hover"
+            },
+            {
+               "slug": "secondary-active",
+               "color": "var(--astc-secondary-active)",
+               "name": "Secondary Active"
+            },
+
+            {
+               "slug": "text-dark",
+               "color": "var(--astc-text-dark)",
+               "name": "Text Dark"
+            },
+            {
+               "slug": "text-light",
+               "color": "var(--astc-text-light)",
+               "name": "Text Light"
+            },
+
+
+            {
+               "slug": "info",
+               "color": "var(--astc-color-info)",
+               "name": "Info"
+            },
+            {
+               "slug": "success",
+               "color": "var(--astc-color-success)",
+               "name": "Success"
+            },
+            {
+               "slug": "danger",
+               "color": "var(--astc-color-danger)",
+               "name": "Danger"
+            },
+            {
+               "slug": "warning",
+               "color": "var(--astc-color-warning)",
+               "name": "Warning"
+            },
+
+
+
+
+            {
+               "slug": "style-background-white",
+               "color": "var(--astc-style-background-white)",
+               "name": "White Background"
+            },
+            {
+               "slug": "style-background-1",
+               "color": "var(--astc-style-background-1)",
+               "name": "Primary Container Background"
+            },
+            {
+               "slug": "style-background-2",
+               "color": "var(--astc-style-background-2)",
+               "name": "Secondary Container Background"
+            },
+            {
+               "slug": "style-background-3",
+               "color": "var(--astc-style-background-3)",
+               "name": "Tertiary Container Background"
+            },
+            {
+               "slug": "style-background-4",
+               "color": "var(--astc-style-background-4)",
+               "name": "Error Container Background"
+            },
+            {
+               "slug": "style-background-5",
+               "color": "var(--astc-style-background-5)",
+               "name": "Inverse Surface Background"
+            },
+
+
+
+            {
+               "slug": "layer-background-1",
+               "color": "var(--astc-layer-background-1)",
+               "name": "Layer Background 1"
+            },
+            {
+               "slug": "layer-background-2",
+               "color": "var(--astc-layer-background-2)",
+               "name": "Layer Background 2"
+            },
+            {
+               "slug": "layer-background-3",
+               "color": "var(--astc-layer-background-3)",
+               "name": "Layer Background 3"
+            },
+            {
+               "slug": "layer-background-4",
+               "color": "var(--astc-layer-background-4)",
+               "name": "Layer Background 4"
+            },
+            {
+               "slug": "layer-background-5",
+               "color": "var(--astc-layer-background-5)",
+               "name": "Layer Background 5"
+            }
+         ]
+      },
+      "typography": {
+         "fontSizes": [
+            {
+               "name": "Smaller",
+               "slug": "smaller",
+               "size": "0.75rem"
+            },
+            {
+               "name": "Small",
+               "slug": "small",
+               "size": "0.875rem"
+            },
+            {
+               "name": "Normal",
+               "slug": "normal",
+               "size": "1rem"
+            },
+            {
+               "name": "Large",
+               "slug": "large",
+               "size": "1.5rem"
+            },
+            {
+               "name": "Extra Large",
+               "slug": "x-large",
+               "size": "2rem"
+            }
+         ]
+      }
+   }
+}

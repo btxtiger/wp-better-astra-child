@@ -11,11 +11,19 @@
 /**
  * Define Constants
  */
-define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', '{{ package.version }}');
+$packageVersion = '{{ package.version }}';
+if ($packageVersion === '{{ package.version }}') {
+   $packageVersion = random_int(10000, 99999);
+}
+define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', $packageVersion);
+
+require_once get_stylesheet_directory() . '/scripts/astra.php';
+require_once get_stylesheet_directory() . '/scripts/colors.php';
 
 require_once get_stylesheet_directory() . '/scripts/fontawesome.php';
-require_once get_stylesheet_directory() . '/scripts/astra.php';
+
 require_once get_stylesheet_directory() . '/scripts/cf7.php';
 require_once get_stylesheet_directory() . '/scripts/cf7-editor.php';
+
 require_once get_stylesheet_directory() . '/scripts/wp-admin.php';
 require_once get_stylesheet_directory() . '/scripts/wp-github-updater.php';

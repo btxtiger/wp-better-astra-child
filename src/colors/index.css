@@ -1,0 +1,60 @@
+@import "material-light.css";
+:root {
+  --astc-text-dark: #171d19;
+  --astc-text-light: #edf2eb;
+  --astc-primary: #318a5f;
+  --astc-primary-contrast-text: #ffffff;
+  --astc-primary-hover: #2a7551;
+  --astc-primary-active: #236445;
+  --astc-primary-dark: #236445;
+  --astc-primary-light: #389f6d;
+  --astc-secondary: #c09d53;
+  --astc-secondary-contrast-text: #ffffff;
+  --astc-secondary-hover: #ab883f;
+  --astc-secondary-active: #917435;
+  --astc-secondary-dark: #917435;
+  --astc-secondary-light: #cbae71;
+  --astc-color-info: #38aecc;
+  --astc-background-info: #cfe1e6;
+  --astc-text-info: #226d80;
+  --astc-color-success: #318a5f;
+  --astc-background-success: #cfe6da;
+  --astc-text-success: #2e8058;
+  --astc-color-danger: #db504a;
+  --astc-background-danger: #802e2b;
+  --astc-text-danger: #e6d0cf;
+  --astc-color-warning: #ffcf00;
+  --astc-background-warning: #e6e1cf;
+  --astc-text-warning: #806800;
+  --astc-form-input-outline-inactive: #d1d5db;
+  --astc-form-input-outline-focus: black;
+  --astc-form-input-background-inactive: #fcfcfc;
+  --astc-form-input-background-focus: white;
+  --astc-form-border-radius: 12px;
+  --astc-border-color: var(--astc-form-input-outline-inactive);
+  --astc-layer-background-1: #f7f7f7;
+  --astc-layer-background-2: #f0f0f0;
+  --astc-layer-background-3: #e0e0e0;
+  --astc-layer-background-4: #d0d0d0;
+  --astc-layer-background-5: #c0c0c0;
+  --astc-style-background-white: white;
+  --astc-style-background-1: #acf2c7;
+  --astc-style-background-2: #d0e8d6;
+  --astc-style-background-3: #ffdfa0;
+  --astc-style-background-4: #ffdad6;
+  --astc-style-background-5: #2c322d;
+}
+
+body {
+  --ast-global-color-0: var(--astc-primary);
+  --ast-global-color-1: var(--astc-primary-hover);
+  --ast-global-color-2: var(--astc-secondary);
+  --ast-global-color-3: var(--astc-secondary-hover);
+  --ast-global-color-4: var(--astc-layer-background-1);
+  --ast-global-color-5: var(--astc-layer-background-3);
+  --ast-global-color-6: var(--astc-border-color);
+  --ast-global-color-7: var(--astc-text-dark);
+  --ast-global-color-8: var(--astc-text-light);
+}
+
+/*# sourceMappingURL=index.css.map */

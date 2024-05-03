@@ -1,6 +1,6 @@
 :root {
   --ast-comment-inputs-background: #FCFCFC;
-  --ast-form-border-radius: 3px;
+  --ast-form-border-radius: 12px;
 }
 
 #primary {
@@ -19,6 +19,22 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+#content main article header.entry-header {
+  margin-bottom: 0 !important;
+}
+
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner {
+  background-color: var(--ast-dark-background-color-2, #FFFFFF) !important;
+}
+
+#ast-mobile-site-navigation button.ast-menu-toggle {
+  box-shadow: none !important;
+  outline: none;
+  border-radius: 0;
+}
+#ast-mobile-site-navigation button.ast-menu-toggle .ast-icon.icon-arrow svg {
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=astra.css.map */
