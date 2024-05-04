@@ -69,7 +69,7 @@ body.dark {
   --astc-form-input-background-focus: #373737;
   --astc-form-border-radius: 12px;
   --astc-border-color: var(--astc-form-input-outline-inactive);
-  --astc-site-background: #191c1a;
+  --astc-site-background: var(--astc-layer-background-2);
   --astc-layer-background-1: #0f1511;
   --astc-layer-background-2: #171d19;
   --astc-layer-background-3: #1b211d;
