@@ -1,5 +1,5 @@
 :root {
-   --ast-comment-inputs-background: #FCFCFC;
+   --ast-comment-inputs-background: #fcfcfc;
    --ast-form-border-radius: 12px;
 }
 
@@ -8,11 +8,22 @@
    margin: 0 !important;
    padding: 0 !important;
 
-   @media (max-width: 921px) {
+   &.ast-blog-layout-4-grid {
+      padding-top: 2rem !important;
+      padding-bottom: 4rem !important;
+   }
+
+   //@media (max-width: 921px) {
       .ast-article-single {
          padding-top: 1em !important;
          padding-bottom: 1em !important;
       }
+   //}
+}
+
+section.ast-single-entry-banner {
+   a.ast-button.ast-badge-tax {
+      border-radius: var(--ast-form-border-radius);
    }
 }
 
@@ -27,18 +38,109 @@
    main article header.entry-header {
       margin-bottom: 0 !important;
    }
-}
 
-#ast-mobile-popup-wrapper .ast-mobile-popup-inner {
-   background-color: var(--ast-dark-background-color-2, #FFFFFF) !important;
+   nav.post-navigation {
+      margin-bottom: 2rem;
+
+      .nav-next a, .nav-previous a {
+         background-color: var(--astc-layer-background-3);
+         padding: 8px 16px;
+         border-radius: var(--ast-form-border-radius);
+      }
+   }
+
+   nav.pagination .page-numbers {
+      border-radius: var(--ast-form-border-radius);
+      padding: 2px;
+   }
+
+   .ast-article-post .post-thumb-img-content img {
+      object-fit: cover;
+      object-position: top;
+   }
 }
 
 #ast-mobile-site-navigation button.ast-menu-toggle {
    box-shadow: none !important;
    outline: none;
    border-radius: 0;
+   height: 53px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+   overflow: hidden;
+   border: none;
 
    .ast-icon.icon-arrow svg {
       margin: 0 1rem;
    }
 }
+
+#ast-mobile-popup-wrapper {
+   .ast-mobile-popup-inner {
+      .ast-mobile-popup-header {
+         padding: 6px 20px;
+
+         .menu-toggle-close {
+            width: 46px;
+            height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--astc-layer-background-3);
+            border: none;
+            &:focus {
+               border: none;
+            }
+         }
+      }
+   }
+}
+
+// Off-Canvas Menu sizing
+#ast-mobile-site-navigation .main-header-menu .menu-item .menu-link {
+   line-height: 1.5;
+   padding: 10px 20px;
+}
+#ast-mobile-site-navigation .main-header-menu .menu-item .menu-item .menu-link {
+   margin-left: 20px;
+}
+
+// Main menu hover & active
+#primary-site-navigation-desktop > .main-navigation > .main-header-menu {
+   & > .menu-item {
+      margin-left: 1px;
+      margin-right: 1px;
+
+      & > .menu-link {
+         border-radius: var(--astc-form-border-radius);
+      }
+   }
+
+   & > .menu-item:hover > .menu-link,
+   & > .menu-item.current-menu-ancestor > .menu-link {
+      color: var(--ast-global-color-1);
+      background: var(--ast-global-color-5);
+   }
+}
+
+// Fix the stupid mobile bottom column spacing wtf
+@media (max-width: 544px) {
+   .wp-block-columns .wp-block-column:not(:last-child) {
+      margin-bottom: 0;
+   }
+}
+
+// Main Menu Style TODO: Buggy
+//#primary-site-navigation-desktop .main-header-menu {
+//   background-color: var(--astc-layer-background-3) !important;
+//   border-radius: var(--astc-form-border-radius);
+//   & > .menu-item > .menu-link:first-child {
+//      border-top-left-radius: var(--astc-form-border-radius);
+//      border-bottom-left-radius: var(--astc-form-border-radius);
+//   }
+//   & > .menu-item.current-menu-item > .menu-link {
+//      background: var(--ast-global-color-6);
+//   }
+//}

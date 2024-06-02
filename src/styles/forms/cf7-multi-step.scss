@@ -1,7 +1,10 @@
 .wpcf7 {
    .cf7mls {
-      .cf7mls_next.action-button {
+      .cf7mls_next.action-button, .cf7mls_back.action-button {
          background-color: var(--astc-form-accent-color);
+         font-size: 1rem;
+         font-weight: 500;
+         color: var(--astc-text-inverse);
       }
 
       .cf7mls_number_step_wrap {

@@ -1,5 +1,4 @@
 .wpcf7 {
-   --ast-global-color-0: black;
    max-width: 800px;
    margin: 0 auto;
 
@@ -19,7 +18,13 @@
    }
 
    .wpcf7-submit {
-      padding: 0.75rem 1.25rem;
+      padding: 0.75rem 1.25rem !important;
+      font-size: 1rem;
+      font-weight: 600 !important;
+      float: right;
+   }
+   .wpcf7-spinner {
+      float: right;
    }
 
    textarea {

@@ -4,7 +4,6 @@
  * Remove Astra extra spacing
  */
 add_filter('astra_stretched_layout_with_spacing', '__return_false');
-add_filter('run_wptexturize', '__return_false');
 
 /**
  * Enqueue styles

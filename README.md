@@ -8,3 +8,10 @@ Add a snippet to your site header:
     window.astcNoDarkMode = true;
 </script>
 ```
+
+## Set CF7 color
+```css
+.wpcf7 {
+   --ast-global-color-0: black;
+}
+```

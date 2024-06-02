@@ -1,5 +1,5 @@
 {
-   "version": 2,
+   "version": 3,
    "settings": {
       "color": {
          "defaultPalette": false,
@@ -129,14 +129,14 @@
 
 
             {
-               "slug": "style-force-black",
+               "slug": "style-force-white",
                "color": "#FFFFFF",
-               "name": "!!Force White"
+               "name": "Force White"
             },
             {
                "slug": "style-force-black",
                "color": "#000000",
-               "name": "!!Force Black"
+               "name": "Force Black"
             },
 
 
@@ -171,45 +171,40 @@
             {
                "slug": "layer-background-1",
                "color": "var(--astc-layer-background-1)",
-               "name": "Layer Background 1"
+               "name": "Layer Background 1: Surface"
             },
             {
                "slug": "layer-background-2",
                "color": "var(--astc-layer-background-2)",
-               "name": "Layer Background 2"
+               "name": "Layer Background 2: Surface Container Low"
             },
             {
                "slug": "layer-background-3",
                "color": "var(--astc-layer-background-3)",
-               "name": "Layer Background 3"
+               "name": "Layer Background 3: Surface Container"
             },
             {
                "slug": "layer-background-4",
                "color": "var(--astc-layer-background-4)",
-               "name": "Layer Background 4"
+               "name": "Layer Background 4: Surface Container High"
             },
             {
                "slug": "layer-background-5",
                "color": "var(--astc-layer-background-5)",
-               "name": "Layer Background 5"
+               "name": "Layer Background 5: Surface Container Highest"
             }
          ]
       },
       "typography": {
          "fontSizes": [
             {
-               "name": "Smaller",
-               "slug": "smaller",
-               "size": "0.75rem"
-            },
-            {
                "name": "Small",
                "slug": "small",
                "size": "0.875rem"
             },
             {
-               "name": "Normal",
-               "slug": "normal",
+               "name": "Medium",
+               "slug": "medium",
                "size": "1rem"
             },
             {
