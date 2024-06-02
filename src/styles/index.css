@@ -20,10 +20,12 @@
   border-top-right-radius: 0;
 }
 .card .card-header {
-  border-top-left-radius: var(--astc-form-border-radius, 0.25rem);
-  border-top-right-radius: var(--astc-form-border-radius, 0.25rem);
   padding: 1.25rem 1.25rem 0.5rem;
   background-color: var(--astc-layer-background-2);
+}
+.card .card-header:first-child {
+  border-top-left-radius: var(--astc-form-border-radius, 0.25rem);
+  border-top-right-radius: var(--astc-form-border-radius, 0.25rem);
 }
 .card .card-header .card-title {
   font-size: 1.25rem;
