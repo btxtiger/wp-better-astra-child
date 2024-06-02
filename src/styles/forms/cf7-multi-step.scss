@@ -20,6 +20,7 @@
 
       .cf7mls_progress_bar {
          margin: 1rem auto 1rem !important;
+         padding: 0;
 
          li.active:before {
             background: var(--astc-form-accent-color) !important;
