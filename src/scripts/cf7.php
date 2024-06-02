@@ -5,6 +5,12 @@ add_filter( 'wpcf7_form_elements', 'do_shortcode' );
 
 function wrap_cf7_email_body($components, $contact_form, $mail) {
    $body = $components['body'];
+
+   // if $body is already html doc, then return
+   if (strpos($body, '<!DOCTYPE html') !== false) {
+      return $components;
+   }
+
    $mailStyle = "
       <style>
           body { font-size: 16px; font-family: Tahoma, 'Helvetica Neue', Arial, sans-serif; }
