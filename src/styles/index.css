@@ -51,7 +51,6 @@
   direction: rtl;
   font-size: 1.125em;
   line-height: 1.75;
-  float: right;
 }
 
 h1 {
@@ -238,10 +237,6 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
 body.dark {
   background-color: var(--astc-site-background) !important;
   color: var(--astc-text-normal);
-}
-body.dark .site-below-footer-wrap {
-  background-color: var(--astc-site-background) !important;
-  border-color: var(--astc-border-color) !important;
 }
 body.dark .card .card-header {
   background: var(--astc-layer-background-3);
@@ -447,7 +442,8 @@ label {
   margin-bottom: 1rem;
 }
 .wpcf7 select {
-  font-size: 1.125rem;
+  font-size: 1em;
+  padding: 0.5em 0.75em;
 }
 .wpcf7 fieldset {
   padding: 0;
