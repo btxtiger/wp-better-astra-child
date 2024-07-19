@@ -17,6 +17,7 @@ if ($packageVersion === '{{ package.version }}') {
 }
 define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', $packageVersion);
 
+require_once get_stylesheet_directory() . '/scripts/handle-dark-mode.php';
 require_once get_stylesheet_directory() . '/scripts/wordpress.php';
 require_once get_stylesheet_directory() . '/scripts/astra.php';
 
@@ -28,16 +29,3 @@ require_once get_stylesheet_directory() . '/scripts/cf7-editor.php';
 require_once get_stylesheet_directory() . '/scripts/wp-admin.php';
 require_once get_stylesheet_directory() . '/scripts/wp-github-updater.php';
 
-
-function add_dark_mode_script() {
-   ?>
-   <script>
-      if (window.astcNoDarkMode !== false) {
-         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add('dark');
-         }
-      }
-   </script>
-   <?php
-}
-add_action('wp_footer', 'add_dark_mode_script');

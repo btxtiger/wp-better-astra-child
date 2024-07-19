@@ -1,0 +1,55 @@
+:root {
+   // FALLBACK Compatibility: Material Elevating Layer Backgrounds
+   --astc-layer-background-1: var(--md-sys-color-surface); // Surface
+   --astc-layer-background-2: var(--md-sys-color-surface-container-low); // Surface Container Low
+   --astc-layer-background-3: var(--md-sys-color-surface-container); // Surface Container
+   --astc-layer-background-4: var(--md-sys-color-surface-container-high); // Surface Container High
+   --astc-layer-background-5: var(--md-sys-color-surface-container-highest); // Surface Container Highest
+   --astc-style-background-1: var(--md-sys-color-primary-container); // Primary Container (WP Primary)
+   --astc-style-background-2: var(--md-sys-color-secondary-container); // Secondary Container (generated)
+   --astc-style-background-3: var(--md-sys-color-tertiary-container); // Tertiary Container (WP Secondary)
+   --astc-style-background-4: var(--md-sys-color-error-container); // Error Container
+   --astc-style-background-5: var(--md-sys-color-inverse-surface); // Inverse Surface
+   --astc-primary-contrast: var(--md-sys-color-on-primary); // On Primary
+   --astc-secondary-contrast: var(--md-sys-color-on-secondary); // On Secondary
+   --astc-tertiary-contrast: var(--md-sys-color-on-tertiary); // On Tertiary
+   --astc-color-info: #38aecc;
+   --astc-background-info: #cfe1e6; // Shades HSL: Saturate 10%, Brightness 90%
+   --astc-text-info: #226d80; // Shades HSL: Brightness 50%
+   --astc-color-success: #318a5f;
+   --astc-background-success: #cfe6da;
+   --astc-text-success: #2e8058;
+   --astc-color-danger: #db504a;
+   --astc-background-danger: #e6d0cf;
+   --astc-text-danger: #802e2b;
+   --astc-color-warning: #ffcf00;
+   --astc-background-warning: #e6e1cf;
+   --astc-text-warning: #806800;
+}
+
+body.dark {
+   --astc-layer-background-1: #0f1511; // Surface
+   --astc-layer-background-2: #171d19; // Surface Container Low
+   --astc-layer-background-3: #1b211d; // Surface Container
+   --astc-layer-background-4: #262b27; // Surface Container High
+   --astc-layer-background-5: #303632; // Surface Container Highest
+   --astc-style-background-1: #045233; // Primary Container (WP Primary)
+   --astc-style-background-2: #374b3e; // Secondary Container (generated)
+   --astc-style-background-3: #5c4300; // Tertiary Container (WP Secondary)
+   --astc-style-background-4: #93000a; // Error Container
+   --astc-style-background-5: #dfe4dd; // Inverse Surface
+   --astc-primary-contrast: #003921; // On Primary
+   --astc-secondary-contrast: #402d00; // On Secondary
+   --astc-color-info: #1e5a6c;
+   --astc-background-info: #2a3942;
+   --astc-text-info: #a7cfd8;
+   --astc-color-success: #1d6042;
+   --astc-background-success: #2a3d33;
+   --astc-text-success: #a0cbb0;
+   --astc-color-danger: #8a2c29;
+   --astc-background-danger: #3d2726;
+   --astc-text-danger: #f2b8b5;
+   --astc-color-warning: #b38b00;
+   --astc-background-warning: #403d2f;
+   --astc-text-warning: #ffcf00;
+}

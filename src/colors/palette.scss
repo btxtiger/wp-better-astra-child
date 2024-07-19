@@ -1,60 +1,66 @@
 // Check https://material-foundation.github.io/material-theme-builder/ to build your own theme
 :root {
    // Main Colors
-   --astc-text-normal: #171d19; // On Surface
-   --astc-text-inverse: #edf2eb; // Inverse On Surface
+   --astc-text-normal: var(--md-sys-color-on-surface); // On Surface
+   --astc-text-inverse: var(--md-sys-color-inverse-on-surface); // Inverse On Surface
 
    // Primary
-   --astc-primary: #318a5f; // Primary (Original or Generated)
-   --astc-primary-contrast: #ffffff; // On Primary
-   --astc-primary-hover: #2a7551; // 15% Darker
-   --astc-primary-active: #236445; // 30% Darker
+   --astc-primary: var(--md-sys-color-primary); // Primary (Original or Generated)
+   --astc-on-primary: var(--md-sys-color-on-primary); // On Primary
 
    // Secondary
-   --astc-secondary: #c09d53;
-   --astc-secondary-contrast: #ffffff; // On Secondary
-   --astc-secondary-hover: #ab883f; // 15% Darker
-   --astc-secondary-active: #917435; // 30% Darker
+   --astc-secondary: var(--md-sys-color-secondary); // Secondary (Original or Generated)
+   --astc-on-secondary: var(--md-sys-color-on-secondary); // On Secondary
 
-   // Events
-   --astc-color-info: #38aecc;
-   --astc-background-info: #cfe1e6; // Shades HSL: Saturate 10%, Brightness 90%
-   --astc-text-info: #226d80; // Shades HSL: Brightness 50%
+   // Tertiary
+   --astc-tertiary: var(--md-sys-color-tertiary); // Tertiary (Original or Generated)
+   --astc-on-tertiary: var(--md-sys-color-on-tertiary); // On Tertiary
 
-   --astc-color-success: #318a5f;
-   --astc-background-success: #cfe6da;
-   --astc-text-success: #2e8058;
-
-   --astc-color-danger: #db504a;
-   --astc-background-danger: #e6d0cf;
-   --astc-text-danger: #802e2b;
-
-   --astc-color-warning: #ffcf00;
-   --astc-background-warning: #e6e1cf;
-   --astc-text-warning: #806800;
+   // Error
+   --astc-error: var(--md-sys-color-error); // Error (Original or Generated)
+   --astc-on-error: var(--md-sys-color-on-error); // On Error
 
    // Forms
    --astc-form-accent-color: black;
    --astc-form-input-outline-inactive: #d1d5db;
    --astc-form-input-background-inactive: #fcfcfc;
    --astc-form-input-background-focus: white;
-   --astc-form-border-radius: 12px;
+   --astc-form-border-radius: 12px; // TODO: Rename
 
    // Misc
    --astc-border-color: var(--astc-form-input-outline-inactive);
-   --astc-site-background: white;
+   --astc-site-background: var(--astc-layer-surface);
 
-   // Material Elevating Layer Backgrounds
-   --astc-layer-background-1: #f7f7f7; // Surface
-   --astc-layer-background-2: #f0f0f0; // Surface Container Low
-   --astc-layer-background-3: #e0e0e0; // Surface Container
-   --astc-layer-background-4: #d0d0d0; // Surface Container High
-   --astc-layer-background-5: #c0c0c0; // Surface Container Highest
+   // Layers
+   --astc-layer-surface: var(--md-sys-color-surface); // Surface
+   --astc-layer-inverse-surface: var(--md-sys-color-inverse-surface); // Inverse Surface
 
-   // Content Background Colors
-   --astc-style-background-1: #acf2c7; // Primary Container (WP Primary)
-   --astc-style-background-2: #d0e8d6; // Secondary Container (generated)
-   --astc-style-background-3: #ffdfa0; // Tertiary Container (WP Secondary)
-   --astc-style-background-4: #ffdad6; // Error Container
-   --astc-style-background-5: #2c322d; // Inverse Surface
+   --astc-layer-surface-dim: var(--md-sys-color-surface-dim); // Surface Dim
+   --astc-layer-surface-bright: var(--md-sys-color-surface-bright); // Surface Bright
+   --astc-layer-surface-container-lowest: var(--md-sys-color-surface-container-lowest); // Surface Container Lowest
+   --astc-layer-surface-container-low: var(--md-sys-color-surface-container-low); // Surface Container Low
+   --astc-layer-surface-container: var(--md-sys-color-surface-container); // Surface Container
+   --astc-layer-surface-container-high: var(--md-sys-color-surface-container-high); // Surface Container High
+   --astc-layer-surface-container-highest: var(--md-sys-color-surface-container-highest); // Surface Container Highest
+
+   --astc-layer-primary-container: var(--md-sys-color-primary-container); // Primary Container
+   --astc-layer-on-primary-container: var(--md-sys-color-on-primary-container); // On Primary Container
+
+   --astc-layer-secondary-container: var(--md-sys-color-secondary-container); // Secondary Container
+   --astc-layer-on-secondary-container: var(--md-sys-color-on-secondary-container); // On Secondary Container
+
+   --astc-layer-tertiary-container: var(--md-sys-color-tertiary-container); // Tertiary Container
+   --astc-layer-on-tertiary-container: var(--md-sys-color-on-tertiary-container); // On Tertiary Container
+
+   --astc-layer-error-container: var(--md-sys-color-error-container); // Error Container
+   --astc-layer-on-error-container: var(--md-sys-color-on-error-container); // On Error Container
+
+   --astc-layer-info-container: #d6f1ff;
+   --astc-layer-on-info-container: #002d41;
+
+   --astc-layer-success-container: #dfffd6;
+   --astc-layer-on-success-container: #044100;
+
+   --astc-layer-warning-container: #fffad6;
+   --astc-layer-on-warning-container: #413800;
 }

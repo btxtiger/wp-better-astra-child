@@ -44,14 +44,9 @@
                "name": "Primary"
             },
             {
-               "slug": "primary-hover",
+               "slug": "on-primary",
                "color": "var(--astc-primary-hover)",
-               "name": "Primary Hover"
-            },
-            {
-               "slug": "primary-active",
-               "color": "var(--astc-primary-active)",
-               "name": "Primary Active"
+               "name": "On-Primary"
             },
             {
                "slug": "secondary",
@@ -59,14 +54,19 @@
                "name": "Secondary"
             },
             {
-               "slug": "secondary-hover",
-               "color": "var(--astc-secondary-hover)",
-               "name": "Secondary Hover"
+               "slug": "on-secondary",
+               "color": "var(--astc-on-secondary)",
+               "name": "On-Secondary"
             },
             {
-               "slug": "secondary-active",
-               "color": "var(--astc-secondary-active)",
-               "name": "Secondary Active"
+               "slug": "tertiary",
+               "color": "var(--astc-tertiary)",
+               "name": "Tertiary"
+            },
+            {
+               "slug": "on-tertiary",
+               "color": "var(--astc-on-tertiary)",
+               "name": "On-Tertiary"
             },
 
             {
@@ -82,47 +82,47 @@
 
 
             {
-               "slug": "info",
-               "color": "var(--astc-color-info)",
-               "name": "Info"
+               "slug": "layer-info-container",
+               "color": "var(--astc-layer-info-container)",
+               "name": "Info-Container"
             },
             {
-               "slug": "info-background",
-               "color": "var(--astc-background-info)",
-               "name": "Info Background"
-            },
-
-            {
-               "slug": "success",
-               "color": "var(--astc-color-success)",
-               "name": "Success"
-            },
-            {
-               "slug": "success-background",
-               "color": "var(--astc-background-success)",
-               "name": "Success Background"
+               "slug": "layer-on-info-background",
+               "color": "var(--astc-layer-on-info-container)",
+               "name": "On-Info-Conatiner"
             },
 
             {
-               "slug": "danger",
-               "color": "var(--astc-color-danger)",
-               "name": "Danger"
+               "slug": "layer-success-container",
+               "color": "var(--astc-layer-success-container)",
+               "name": "Success-Container"
             },
             {
-               "slug": "danger-background",
-               "color": "var(--astc-background-danger)",
-               "name": "Danger Background"
+               "slug": "layer-on-success-container",
+               "color": "var(--astc-layer-on-success-container)",
+               "name": "On-Success-Container"
             },
 
             {
-               "slug": "warning",
-               "color": "var(--astc-color-warning)",
+               "slug": "layer-danger-container",
+               "color": "var(--astc-layer-error-container)",
+               "name": "Danger-Container"
+            },
+            {
+               "slug": "layer-on-danger-container",
+               "color": "var(--astc-layer-on-error-container)",
+               "name": "On-Danger-Container"
+            },
+
+            {
+               "slug": "layer-warning-container",
+               "color": "var(--astc-layer-warning-container)",
                "name": "Warning"
             },
             {
-               "slug": "warning-background",
-               "color": "var(--astc-background-warning)",
-               "name": "Warning Background"
+               "slug": "layer-on-warning-container",
+               "color": "var(--astc-layer-on-warning-container)",
+               "name": "On-Warning-Container"
             },
 
 
@@ -141,57 +141,68 @@
 
 
             {
-               "slug": "style-background-1",
-               "color": "var(--astc-style-background-1)",
-               "name": "Primary Container Background"
+               "slug": "layer-primary-container",
+               "color": "var(--astc-layer-primary-container)",
+               "name": "Primary-Container"
             },
             {
-               "slug": "style-background-2",
-               "color": "var(--astc-style-background-2)",
-               "name": "Secondary Container Background"
-            },
-            {
-               "slug": "style-background-3",
-               "color": "var(--astc-style-background-3)",
-               "name": "Tertiary Container Background"
-            },
-            {
-               "slug": "style-background-4",
-               "color": "var(--astc-style-background-4)",
-               "name": "Error Container Background"
-            },
-            {
-               "slug": "style-background-5",
-               "color": "var(--astc-style-background-5)",
-               "name": "Inverse Surface Background"
+               "slug": "layer-on-primary-container",
+               "color": "var(--astc-layer-on-primary-container)",
+               "name": "On-Primary-Container"
             },
 
+            {
+               "slug": "layer-secondary-container",
+               "color": "var(--astc-layer-secondary-container)",
+               "name": "secondary-Container"
+            },
+            {
+               "slug": "layer-on-secondary-container",
+               "color": "var(--astc-layer-on-secondary-container)",
+               "name": "On-secondary-Container"
+            },
 
+            {
+               "slug": "layer-tertiary-container",
+               "color": "var(--astc-layer-tertiary-container)",
+               "name": "tertiary-Container"
+            },
+            {
+               "slug": "layer-on-tertiary-container",
+               "color": "var(--astc-layer-on-tertiary-container)",
+               "name": "On-tertiary-Container"
+            },
 
             {
-               "slug": "layer-background-1",
-               "color": "var(--astc-layer-background-1)",
-               "name": "Layer Background 1: Surface"
+               "slug": "layer-surface",
+               "color": "var(--astc-layer-surface)",
+               "name": "Surface"
             },
             {
-               "slug": "layer-background-2",
-               "color": "var(--astc-layer-background-2)",
-               "name": "Layer Background 2: Surface Container Low"
+               "slug": "layer-inverse-surface",
+               "color": "var(--astc-layer-inverse-surface)",
+               "name": "Inverse Surface"
+            },
+
+            {
+               "slug": "layer-surface-container-low",
+               "color": "var(--astc-layer-surface-container-low)",
+               "name": "Surface Container Low"
             },
             {
-               "slug": "layer-background-3",
-               "color": "var(--astc-layer-background-3)",
-               "name": "Layer Background 3: Surface Container"
+               "slug": "layer-surface-container",
+               "color": "var(--astc-layer-surface-container)",
+               "name": "Surface Container"
             },
             {
-               "slug": "layer-background-4",
-               "color": "var(--astc-layer-background-4)",
-               "name": "Layer Background 4: Surface Container High"
+               "slug": "layer-surface-container-high",
+               "color": "var(--astc-layer-surface-container-high)",
+               "name": "Surface Container High"
             },
             {
-               "slug": "layer-background-5",
-               "color": "var(--astc-layer-background-5)",
-               "name": "Layer Background 5: Surface Container Highest"
+               "slug": "layer-surface-container-highest",
+               "color": "var(--astc-layer-surface-container-highest)",
+               "name": "Surface Container Highest"
             }
          ]
       },
@@ -218,6 +229,38 @@
                "size": "2rem"
             }
          ]
+      }
+   },
+   "styles": {
+      "blocks": {
+         "core/group": {
+            "spacing": {
+               "padding": {
+                  "top": "1.5rem",
+                  "right": "0",
+                  "bottom": "2rem",
+                  "left": "0"
+               }
+            },
+            "border": {
+               "radius": "var(--global-border-radius)"
+            }
+         },
+         "core/columns": {
+            "spacing": {
+               "padding": {
+                  "top": "1.5rem",
+                  "right": "0",
+                  "bottom": "2rem",
+                  "left": "0"
+               }
+            }
+         },
+         "core/spacer": {
+            "dimensions": {
+               "minHeight": "1.5rem"
+            }
+         }
       }
    }
 }

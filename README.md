@@ -2,16 +2,15 @@
 A child theme for Astra theme with awesome additional features and customizations.
 
 ## Disable the auto dark mode
-Add a snippet to your site header:
-```html
-<script>
-    window.astcNoDarkMode = true;
-</script>
+Set the following variable in your wp-config.php
+```php
+define( 'ASTC_NO_DARK_MODE', true );
 ```
 
-## Set CF7 color
+## Set custom CF7 color
 ```css
 .wpcf7 {
-   --ast-global-color-0: black;
+   --astc-form-accent-color: blue;
+   --astc-form-accent-color: var(--astc-primary);
 }
 ```
