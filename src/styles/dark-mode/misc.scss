@@ -1,0 +1,5 @@
+body.dark {
+   iframe[data-service="google-maps"] {
+      filter: invert(.9);
+   }
+}

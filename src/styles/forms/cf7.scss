@@ -22,6 +22,8 @@
       font-size: 1rem;
       font-weight: 600 !important;
       float: right;
+      background-color: var(--astc-primary);
+      color: var(--astc-on-primary);
    }
    .wpcf7-spinner {
       float: right;
@@ -57,6 +59,6 @@
    }
 
    button, input[type=submit], input[type=reset], input[type=button] {
-      border-radius: var(--astc-form-border-radius) !important;
+      border-radius: var(--astc-default-border-radius) !important;
    }
 }

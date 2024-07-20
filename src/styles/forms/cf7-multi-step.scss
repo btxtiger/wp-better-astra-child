@@ -22,6 +22,10 @@
          margin: 1rem auto 1rem !important;
          padding: 0;
 
+         li:before {
+            background: var(--astc-layer-surface-container);
+         }
+
          li.active:before {
             background: var(--astc-form-accent-color) !important;
          }

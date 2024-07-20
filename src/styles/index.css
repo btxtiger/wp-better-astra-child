@@ -123,6 +123,10 @@ code {
   font-size: var(--wp--preset--font-size--small);
 }
 
+iframe {
+  border-radius: var(--astc-default-border-radius);
+}
+
 i.fas {
   margin-left: 0.25em;
   margin-right: 0.25em;
@@ -222,11 +226,11 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
   margin-right: 1px;
 }
 #primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item > .menu-link {
-  border-radius: var(--astc-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
 }
 #primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item:hover > .menu-link, #primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item.current-menu-ancestor > .menu-link {
-  color: var(--ast-global-color-1);
-  background: var(--ast-global-color-5);
+  color: var(--astc-layer-on-surface);
+  background: var(--astc-layer-surface-container);
 }
 
 @media (max-width: 544px) {
@@ -328,6 +332,10 @@ body.dark .ast-separate-container .comments-area {
   background-color: unset;
 }
 
+body.dark iframe[data-service=google-maps] {
+  filter: invert(0.9);
+}
+
 input[type=email],
 input[type=number],
 input[type=password],
@@ -339,7 +347,7 @@ input[type=date],
 input[type=url],
 select,
 textarea {
-  border-radius: var(--astc-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
   transition: all 0ms;
   border-width: 1px;
   border-style: solid;
@@ -380,7 +388,7 @@ input[type=date] {
 }
 
 input[type=submit] {
-  border-radius: var(--astc-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
 }
 
 input[type=checkbox],
@@ -424,6 +432,8 @@ label {
   font-size: 1rem;
   font-weight: 600 !important;
   float: right;
+  background-color: var(--astc-primary);
+  color: var(--astc-on-primary);
 }
 .wpcf7 .wpcf7-spinner {
   float: right;
@@ -453,11 +463,11 @@ label {
   font-weight: normal;
 }
 .wpcf7 button, .wpcf7 input[type=submit], .wpcf7 input[type=reset], .wpcf7 input[type=button] {
-  border-radius: var(--astc-form-border-radius) !important;
+  border-radius: var(--astc-default-border-radius) !important;
 }
 
 .wpcf7 .codedropz-upload-handler {
-  border-radius: var(--astc-form-border-radius) !important;
+  border-radius: var(--astc-default-border-radius) !important;
 }
 .wpcf7 .codedropz-upload-handler .codedropz-upload-container {
   background-color: var(--astc-form-input-background-inactive);
@@ -465,7 +475,7 @@ label {
 
 .wpcf7 .digital_signature-pad {
   border: 3px double var(--astc-form-input-outline-inactive);
-  border-radius: var(--astc-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
 }
 .wpcf7 .dscf7_signature input.clearButton {
   left: 2px;
@@ -477,7 +487,7 @@ label {
   display: inline-block;
   text-align: center;
   border: 1px solid var(--astc-form-input-outline-inactive) !important;
-  border-radius: var(--astc-form-border-radius) !important;
+  border-radius: var(--astc-default-border-radius) !important;
   width: 100%;
   margin-bottom: 1rem !important;
   background-color: var(--astc-form-input-background-inactive);
@@ -510,7 +520,7 @@ label {
 }
 .wpcf7 .wpcf7-cf7ic .captcha-image label > input:checked + *,
 .wpcf7 .wpcf7-cf7ic .captcha-image .captcha-image label > input:focus + * {
-  border-radius: var(--astc-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
 }
 
 .wpcf7 .cf7mls .cf7mls_next.action-button,
@@ -524,6 +534,9 @@ label {
 .wpcf7 .cf7mls .cf7mls_progress_bar {
   margin: 1rem auto 1rem !important;
   padding: 0;
+}
+.wpcf7 .cf7mls .cf7mls_progress_bar li:before {
+  background: var(--astc-layer-surface-container);
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li.active:before {
   background: var(--astc-form-accent-color) !important;

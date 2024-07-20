@@ -243,7 +243,7 @@
                }
             },
             "border": {
-               "radius": "var(--global-border-radius)"
+               "radius": "var(--astc-default-border-radius)"
             }
          },
          "core/columns": {
@@ -254,6 +254,9 @@
                   "bottom": "2rem",
                   "left": "0"
                }
+            },
+            "border": {
+               "radius": "var(--astc-default-border-radius)"
             }
          },
          "core/spacer": {

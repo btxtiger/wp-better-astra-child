@@ -6,7 +6,7 @@
          text-align: center;
 
          border: 1px solid var(--astc-form-input-outline-inactive) !important;
-         border-radius: var(--astc-form-border-radius) !important;
+         border-radius: var(--astc-default-border-radius) !important;
          width: 100%;
          margin-bottom: 1rem !important;
          background-color: var(--astc-form-input-background-inactive);
@@ -44,7 +44,7 @@
 
          label > input:checked + *,
          .captcha-image label > input:focus + * {
-            border-radius: var(--astc-form-border-radius);
+            border-radius: var(--astc-default-border-radius);
          }
       }
    }

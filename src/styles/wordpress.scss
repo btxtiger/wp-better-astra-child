@@ -67,6 +67,10 @@ code {
    font-size: var(--wp--preset--font-size--small);
 }
 
+iframe {
+   border-radius: var(--astc-default-border-radius);
+}
+
 i {
    &.fas {
       margin-left: 0.25em;

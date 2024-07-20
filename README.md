@@ -14,3 +14,8 @@ define( 'ASTC_NO_DARK_MODE', true );
    --astc-form-accent-color: var(--astc-primary);
 }
 ```
+
+## Set a custom theme
+1. Configure your theme at https://material-foundation.github.io/material-theme-builder/
+2. Change the css selector in light.css to `:root` and in dark.css to `body.dark`
+3. Then upload the 2 files to the `astc-colors` folder in the `wp-content/uploads` directory.

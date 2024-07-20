@@ -114,14 +114,14 @@ section.ast-single-entry-banner {
       margin-right: 1px;
 
       & > .menu-link {
-         border-radius: var(--astc-form-border-radius);
+         border-radius: var(--astc-default-border-radius);
       }
    }
 
    & > .menu-item:hover > .menu-link,
    & > .menu-item.current-menu-ancestor > .menu-link {
-      color: var(--ast-global-color-1);
-      background: var(--ast-global-color-5);
+      color: var(--astc-layer-on-surface);
+      background: var(--astc-layer-surface-container);
    }
 }
 
@@ -135,10 +135,10 @@ section.ast-single-entry-banner {
 // Main Menu Style TODO: Buggy
 //#primary-site-navigation-desktop .main-header-menu {
 //   background-color: var(--astc-layer-background-3) !important;
-//   border-radius: var(--astc-form-border-radius);
+//   border-radius: var(--astc-default-border-radius);
 //   & > .menu-item > .menu-link:first-child {
-//      border-top-left-radius: var(--astc-form-border-radius);
-//      border-bottom-left-radius: var(--astc-form-border-radius);
+//      border-top-left-radius: var(--astc-default-border-radius);
+//      border-bottom-left-radius: var(--astc-default-border-radius);
 //   }
 //   & > .menu-item.current-menu-item > .menu-link {
 //      background: var(--ast-global-color-6);

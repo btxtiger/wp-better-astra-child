@@ -25,7 +25,7 @@
    --astc-form-input-outline-inactive: #d1d5db;
    --astc-form-input-background-inactive: #fcfcfc;
    --astc-form-input-background-focus: white;
-   --astc-form-border-radius: 12px; // TODO: Rename
+   --astc-default-border-radius: 12px;
 
    // Misc
    --astc-border-color: var(--astc-form-input-outline-inactive);
@@ -33,7 +33,9 @@
 
    // Layers
    --astc-layer-surface: var(--md-sys-color-surface); // Surface
+   --astc-layer-on-surface: var(--md-sys-color-on-surface); // On Surface
    --astc-layer-inverse-surface: var(--md-sys-color-inverse-surface); // Inverse Surface
+   --astc-layer-on-inverse-surface: var(--astc-text-inverse); // On Inverse Surface
 
    --astc-layer-surface-dim: var(--md-sys-color-surface-dim); // Surface Dim
    --astc-layer-surface-bright: var(--md-sys-color-surface-bright); // Surface Bright

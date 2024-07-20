@@ -9,7 +9,7 @@ input[type='date'],
 input[type='url'],
 select,
 textarea {
-   border-radius: var(--astc-form-border-radius);
+   border-radius: var(--astc-default-border-radius);
    transition: all 0ms;
 
    border-width: 1px;
@@ -42,7 +42,7 @@ input[type='date'] {
 }
 
 input[type='submit'] {
-   border-radius: var(--astc-form-border-radius);
+   border-radius: var(--astc-default-border-radius);
 }
 
 input[type='checkbox'],

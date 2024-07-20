@@ -29,7 +29,7 @@ body.dark {
   --astc-form-input-outline-inactive: #d1d5db;
   --astc-form-input-background-inactive: #fcfcfc;
   --astc-form-input-background-focus: white;
-  --astc-form-border-radius: 12px;
+  --astc-default-border-radius: 12px;
   --astc-border-color: var(--astc-form-input-outline-inactive);
   --astc-layer-background-1: #0f1511;
   --astc-layer-background-2: #171d19;
