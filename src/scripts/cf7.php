@@ -31,7 +31,6 @@ function wrap_cf7_email_body($components, $contact_form, $mail) {
           }
       </style>
    ";
-   $mailMetaInfo = "";
 
    $mailDoc = "
       <!DOCTYPE html>
@@ -43,7 +42,6 @@ function wrap_cf7_email_body($components, $contact_form, $mail) {
          </head>
          <body>
             $body
-            $mailMetaInfo
          </body>
       </html>
    ";

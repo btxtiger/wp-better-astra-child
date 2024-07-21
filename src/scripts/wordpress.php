@@ -9,9 +9,9 @@ add_filter('wp_editor_set_quality', function($quality, $mime_type) {
 }, 10, 2);
 
 // Disable zoom
-add_action('wp_head', function() {
-   echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">';
-});
+//add_action('wp_head', function() {
+//   echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">';
+//});
 
 
 // Force delete image sizes when deleting an attachment
