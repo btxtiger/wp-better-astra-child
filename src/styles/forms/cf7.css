@@ -1,5 +1,4 @@
 .wpcf7 {
-  --ast-global-color-0: black;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -14,7 +13,15 @@
   display: block;
 }
 .wpcf7 .wpcf7-submit {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem !important;
+  font-size: 1rem;
+  font-weight: 600 !important;
+  float: right;
+  background-color: var(--astc-primary);
+  color: var(--astc-on-primary);
+}
+.wpcf7 .wpcf7-spinner {
+  float: right;
 }
 .wpcf7 textarea {
   resize: vertical;
@@ -30,7 +37,8 @@
   margin-bottom: 1rem;
 }
 .wpcf7 select {
-  font-size: 1.125rem;
+  font-size: 1em;
+  padding: 0.5em 0.75em;
 }
 .wpcf7 fieldset {
   padding: 0;
@@ -40,7 +48,7 @@
   font-weight: normal;
 }
 .wpcf7 button, .wpcf7 input[type=submit], .wpcf7 input[type=reset], .wpcf7 input[type=button] {
-  border-radius: var(--ast-form-border-radius) !important;
+  border-radius: var(--astc-default-border-radius) !important;
 }
 
 /*# sourceMappingURL=cf7.css.map */

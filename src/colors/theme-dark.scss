@@ -1,11 +1,11 @@
 // Check https://material-foundation.github.io/material-theme-builder/ to build your own theme
-body.dark {
+:root.light.dark {
    --astc-form-accent-color: var(--astc-layer-inverse-surface);
    --astc-form-input-outline-inactive: #4f4b46;
    --astc-form-input-background-inactive: #212422;
    --astc-form-input-background-focus: #373737;
 
-   --astc-site-background: var(--astc-layer-surface-container-low);
+   --astc-site-background: var(--astc-layer-surface);
 
    --astc-layer-info-container: #004a93;
    --astc-layer-on-info-container: #d6e9ff;

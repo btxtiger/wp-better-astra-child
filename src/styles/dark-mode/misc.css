@@ -1,4 +1,4 @@
-body.dark iframe[data-service=google-maps] {
+:root.light.dark iframe[data-service=google-maps] {
   filter: invert(0.9);
 }
 

@@ -1,4 +1,4 @@
-:root {
+:root:not(.dark).light {
   --md-sys-color-primary: rgb(76 102 43);
   --md-sys-color-surface-tint: rgb(76 102 43);
   --md-sys-color-on-primary: rgb(255 255 255);
@@ -50,7 +50,7 @@
   --md-sys-color-surface-container-highest: rgb(226 227 216);
 }
 
-body.dark {
+:root.dark {
   --md-sys-color-primary: rgb(177 209 138);
   --md-sys-color-surface-tint: rgb(177 209 138);
   --md-sys-color-on-primary: rgb(31 55 1);
@@ -102,4 +102,4 @@ body.dark {
   --md-sys-color-surface-container-highest: rgb(51 54 46);
 }
 
-/*# sourceMappingURL=md-palette.css.map */
+/*# sourceMappingURL=md-default-palette.css.map */

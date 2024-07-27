@@ -1,11 +1,20 @@
-.wpcf7 .cf7mls .cf7mls_next.action-button {
-  background-color: var(--ast-global-color-0);
+.wpcf7 .cf7mls .cf7mls_next.action-button,
+.wpcf7 .cf7mls .cf7mls_back.action-button {
+  background-color: var(--astc-form-accent-color);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--astc-text-inverse);
+  padding: 0.75rem 1rem;
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar {
   margin: 1rem auto 1rem !important;
+  padding: 0;
+}
+.wpcf7 .cf7mls .cf7mls_progress_bar li:before {
+  background: var(--astc-layer-surface-container);
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li.active:before {
-  background: var(--ast-global-color-0) !important;
+  background: var(--astc-form-accent-color) !important;
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li .cf7mls_progress_bar_title {
   font-size: 0.75em;

@@ -77,3 +77,10 @@ i {
       margin-right: 0.25em;
    }
 }
+
+
+::selection {
+   background: var(--astc-layer-inverse-surface);
+   color: var(--astc-layer-on-inverse-surface);
+}
+

@@ -1,4 +1,4 @@
-:root {
+:root:not(.dark).light {
   --astc-layer-background-1: var(--md-sys-color-surface);
   --astc-layer-background-2: var(--md-sys-color-surface-container-low);
   --astc-layer-background-3: var(--md-sys-color-surface-container);
@@ -26,7 +26,7 @@
   --astc-text-warning: #806800;
 }
 
-body.dark {
+:root.light.dark {
   --astc-layer-background-1: #0f1511;
   --astc-layer-background-2: #171d19;
   --astc-layer-background-3: #1b211d;

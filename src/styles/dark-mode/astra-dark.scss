@@ -1,9 +1,9 @@
-body.dark {
+:root.light.dark {
    background-color: var(--astc-site-background) !important;
    color: var(--astc-text-normal);
 
    .card .card-header {
-      background: var(--astc-layer-background-3);
+      background: var(--astc-layer-surface-container);
    }
 
    .wpcf7 {
@@ -94,11 +94,13 @@ body.dark {
       fill: var(--astc-color-danger) !important;
    }
 
-   .ast-narrow-container .site-content,
-   #primary .error-404,
-   .ast-separate-container .ast-article-inner {
-      background-color: unset;
-   }
+   // TODO: Probably remove
+   //.ast-narrow-container .site-content,
+   //#primary .error-404,
+   //.ast-separate-container .ast-article-inner {
+   //   background-color: unset;
+   //}
+
    .wpcf7-submit {
       float: right;
    }

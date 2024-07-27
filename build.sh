@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# compile all scss files in place to css
+sass src --update
+
 # Extract version from package.json
 VERSION=$(node -p -e "require('./package.json').version")
 releaseDir=dist/wp-better-astra-child

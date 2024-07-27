@@ -1,4 +1,4 @@
-:root {
+:root:not(.dark).light {
    // FALLBACK Compatibility: Material Elevating Layer Backgrounds
    --astc-layer-background-1: var(--md-sys-color-surface); // Surface
    --astc-layer-background-2: var(--md-sys-color-surface-container-low); // Surface Container Low
@@ -27,7 +27,7 @@
    --astc-text-warning: #806800;
 }
 
-body.dark {
+:root.light.dark {
    --astc-layer-background-1: #0f1511; // Surface
    --astc-layer-background-2: #171d19; // Surface Container Low
    --astc-layer-background-3: #1b211d; // Surface Container

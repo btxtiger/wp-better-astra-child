@@ -18,6 +18,7 @@ if ($packageVersion === '{{ package.version }}') {
 define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', $packageVersion);
 
 require_once get_stylesheet_directory() . '/scripts/handle-dark-mode.php';
+require_once get_stylesheet_directory() . '/scripts/override-variables.php';
 require_once get_stylesheet_directory() . '/scripts/wordpress.php';
 require_once get_stylesheet_directory() . '/scripts/astra.php';
 

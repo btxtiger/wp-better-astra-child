@@ -1,5 +1,5 @@
 // Check https://material-foundation.github.io/material-theme-builder/ to build your own theme
-:root {
+:root.light {
    // Main Colors
    --astc-text-normal: var(--md-sys-color-on-surface); // On Surface
    --astc-text-inverse: var(--md-sys-color-inverse-on-surface); // Inverse On Surface

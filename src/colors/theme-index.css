@@ -1,4 +1,4 @@
-:root {
+:root.light {
   --astc-text-normal: var(--md-sys-color-on-surface);
   --astc-text-inverse: var(--md-sys-color-inverse-on-surface);
   --astc-primary: var(--md-sys-color-primary);
@@ -43,12 +43,12 @@
   --astc-layer-on-warning-container: #413800;
 }
 
-body.dark {
+:root.light.dark {
   --astc-form-accent-color: var(--astc-layer-inverse-surface);
   --astc-form-input-outline-inactive: #4f4b46;
   --astc-form-input-background-inactive: #212422;
   --astc-form-input-background-focus: #373737;
-  --astc-site-background: var(--astc-layer-surface-container-low);
+  --astc-site-background: var(--astc-layer-surface);
   --astc-layer-info-container: #004a93;
   --astc-layer-on-info-container: #d6e9ff;
   --astc-layer-success-container: #209300;
@@ -57,7 +57,7 @@ body.dark {
   --astc-layer-on-warning-container: #fff2d6;
 }
 
-body {
+:root, :root.light, body {
   --ast-global-color-0: var(--astc-primary);
   --ast-global-color-1: var(--astc-on-primary);
   --ast-global-color-2: var(--astc-tertiary);
@@ -69,4 +69,4 @@ body {
   --ast-global-color-8: var(--astc-text-inverse);
 }
 
-/*# sourceMappingURL=index_B.css.map */
+/*# sourceMappingURL=theme-index.css.map */

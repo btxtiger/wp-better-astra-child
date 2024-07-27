@@ -1,0 +1,46 @@
+:root.light {
+  --astc-text-normal: var(--md-sys-color-on-surface);
+  --astc-text-inverse: var(--md-sys-color-inverse-on-surface);
+  --astc-primary: var(--md-sys-color-primary);
+  --astc-on-primary: var(--md-sys-color-on-primary);
+  --astc-secondary: var(--md-sys-color-secondary);
+  --astc-on-secondary: var(--md-sys-color-on-secondary);
+  --astc-tertiary: var(--md-sys-color-tertiary);
+  --astc-on-tertiary: var(--md-sys-color-on-tertiary);
+  --astc-error: var(--md-sys-color-error);
+  --astc-on-error: var(--md-sys-color-on-error);
+  --astc-form-accent-color: black;
+  --astc-form-input-outline-inactive: #d1d5db;
+  --astc-form-input-background-inactive: #fcfcfc;
+  --astc-form-input-background-focus: white;
+  --astc-default-border-radius: 12px;
+  --astc-border-color: var(--astc-form-input-outline-inactive);
+  --astc-site-background: var(--astc-layer-surface);
+  --astc-layer-surface: var(--md-sys-color-surface);
+  --astc-layer-on-surface: var(--md-sys-color-on-surface);
+  --astc-layer-inverse-surface: var(--md-sys-color-inverse-surface);
+  --astc-layer-on-inverse-surface: var(--astc-text-inverse);
+  --astc-layer-surface-dim: var(--md-sys-color-surface-dim);
+  --astc-layer-surface-bright: var(--md-sys-color-surface-bright);
+  --astc-layer-surface-container-lowest: var(--md-sys-color-surface-container-lowest);
+  --astc-layer-surface-container-low: var(--md-sys-color-surface-container-low);
+  --astc-layer-surface-container: var(--md-sys-color-surface-container);
+  --astc-layer-surface-container-high: var(--md-sys-color-surface-container-high);
+  --astc-layer-surface-container-highest: var(--md-sys-color-surface-container-highest);
+  --astc-layer-primary-container: var(--md-sys-color-primary-container);
+  --astc-layer-on-primary-container: var(--md-sys-color-on-primary-container);
+  --astc-layer-secondary-container: var(--md-sys-color-secondary-container);
+  --astc-layer-on-secondary-container: var(--md-sys-color-on-secondary-container);
+  --astc-layer-tertiary-container: var(--md-sys-color-tertiary-container);
+  --astc-layer-on-tertiary-container: var(--md-sys-color-on-tertiary-container);
+  --astc-layer-error-container: var(--md-sys-color-error-container);
+  --astc-layer-on-error-container: var(--md-sys-color-on-error-container);
+  --astc-layer-info-container: #d6f1ff;
+  --astc-layer-on-info-container: #002d41;
+  --astc-layer-success-container: #dfffd6;
+  --astc-layer-on-success-container: #044100;
+  --astc-layer-warning-container: #fffad6;
+  --astc-layer-on-warning-container: #413800;
+}
+
+/*# sourceMappingURL=theme-light.css.map */

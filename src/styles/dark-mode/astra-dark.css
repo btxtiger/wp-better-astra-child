@@ -1,143 +1,90 @@
-body.dark {
-  background-color: var(--ast-dark-background-color) !important;
-  color: var(--ast-dark-text-color);
+:root.light.dark {
+  background-color: var(--astc-site-background) !important;
+  color: var(--astc-text-normal);
 }
-body.dark :root {
-  --ast-dark-primary-color: #c09d53;
-  --ast-dark-primary-contrast-color: #242424;
-  --ast-dark-link-color: #c09d53;
-  --ast-dark-text-color: #cecabd;
-  --ast-dark-background-color: #252525;
-  --ast-dark-background-color-2: #2d2d2d;
-  --ast-dark-input-focus-background-color: #373737;
-  --ast-dark-border-color: #4f4b46;
-  --ast-border-color: var(--ast-dark-border-color);
-  --ast-comment-inputs-background: #2d2d2d !important;
+:root.light.dark .card .card-header {
+  background: var(--astc-layer-surface-container);
 }
-body.dark .ast-primary-header-bar {
-  border-color: var(--ast-dark-border-color);
-  background-color: var(--ast-dark-background-color);
-}
-body.dark .site-below-footer-wrap {
-  background-color: var(--ast-dark-background-color) !important;
-  border-color: var(--ast-dark-border-color) !important;
-}
-body.dark .card {
-  --ast-card-header-background: var(--ast-dark-background-color-2);
-}
-body.dark .wpcf7 {
-  --ast-global-color-0: var(--ast-dark-primary-color);
-}
-body.dark .wpcf7 .wpcf7-not-valid-tip {
+:root.light.dark .wpcf7 .wpcf7-not-valid-tip {
   color: #ff6b6b;
 }
-body.dark .wpcf7 .cf7_mls_count_step {
-  color: var(--ast-dark-primary-contrast-color) !important;
+:root.light.dark .wpcf7 .cf7_mls_count_step {
+  color: var(--astc-primary-contrast) !important;
 }
-body.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_number {
-  color: var(--ast-dark-link-color);
+:root.light.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_number {
+  color: var(--astc-secondary);
 }
-body.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_step_current {
-  color: var(--ast-dark-text-color);
+:root.light.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_step_current {
+  color: var(--astc-text-normal);
 }
-body.dark .ast-footer-copyright {
-  color: var(--ast-dark-text-color);
+:root.light.dark .ast-footer-copyright {
+  color: var(--astc-text-normal);
 }
-body.dark .ast-nav-menu .menu-link {
-  background-color: var(--ast-dark-background-color-2) !important;
+:root.light.dark label {
+  color: var(--astc-text-normal);
 }
-body.dark header .ast-primary-header-bar {
-  border-color: var(--ast-dark-border-color) !important;
+:root.light.dark input,
+:root.light.dark textarea,
+:root.light.dark select {
+  color: var(--astc-text-normal) !important;
+  caret-color: var(--astc-text-normal);
 }
-body.dark label {
-  color: var(--ast-dark-text-color);
+:root.light.dark input:focus,
+:root.light.dark textarea:focus,
+:root.light.dark select:focus {
+  background-color: var(--astc-form-input-background-focus) !important;
+  color: var(--astc-text-normal) !important;
+  caret-color: var(--astc-text-normal);
 }
-body.dark input,
-body.dark textarea,
-body.dark select {
-  color: var(--ast-dark-text-color) !important;
-  caret-color: var(--ast-dark-text-color);
-}
-body.dark input:focus,
-body.dark textarea:focus,
-body.dark select:focus {
-  background-color: var(--ast-dark-input-focus-background-color) !important;
-  color: var(--ast-dark-text-color) !important;
-  caret-color: var(--ast-dark-text-color);
-}
-body.dark input[type=checkbox], body.dark input[type=radio] {
+:root.light.dark input[type=checkbox],
+:root.light.dark input[type=radio] {
   mix-blend-mode: overlay;
 }
-body.dark input[type=checkbox]:checked, body.dark input[type=radio]:checked {
+:root.light.dark input[type=checkbox]:checked,
+:root.light.dark input[type=radio]:checked {
   mix-blend-mode: unset !important;
 }
-body.dark button, body.dark input[type=submit], body.dark input[type=reset], body.dark input[type=button] {
-  background-color: var(--ast-dark-primary-color) !important;
-  color: var(--ast-dark-primary-contrast-color) !important;
-}
-body.dark button .mobile-menu-toggle-icon svg, body.dark input[type=submit] .mobile-menu-toggle-icon svg, body.dark input[type=reset] .mobile-menu-toggle-icon svg, body.dark input[type=button] .mobile-menu-toggle-icon svg {
-  fill: var(--ast-dark-primary-contrast-color) !important;
-}
-body.dark a {
-  color: var(--ast-dark-link-color) !important;
-}
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark h5,
-body.dark h6 {
-  color: var(--ast-dark-link-color) !important;
-}
-body.dark #ast-mobile-site-navigation button.ast-menu-toggle {
+:root.light.dark #ast-mobile-site-navigation button.ast-menu-toggle {
   background-color: transparent !important;
   color: white !important;
 }
-body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner {
-  background-color: var(--ast-dark-background-color-2) !important;
+:root.light.dark .cf7mls_progress_bar_percent {
+  background-color: var(--astc-layer-background-2);
 }
-body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header {
-  padding: 1rem 20px;
+:root.light.dark .widget_search .search-form .search-field {
+  background-color: var(--astc-layer-background-2);
 }
-body.dark #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close {
-  width: 42px;
-  height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-body.dark .cf7mls_progress_bar_percent {
-  background-color: var(--ast-dark-background-color-2);
-}
-body.dark .widget_search .search-form .search-field {
-  background-color: var(--ast-dark-background-color-2);
-}
-body.dark :root {
+:root.light.dark :root {
   --ast-dark-danger-text-color: #ff6b6b;
 }
-body.dark .wpcf7-not-valid-tip {
-  color: var(--ast-dark-danger-text-color);
+:root.light.dark .wpcf7-not-valid-tip {
+  color: var(--astc-color-danger);
 }
-body.dark .wpcf7-validation-errors {
-  color: var(--ast-dark-danger-text-color) !important;
+:root.light.dark .wpcf7-validation-errors {
+  color: var(--astc-color-danger) !important;
 }
-body.dark .wpcf7-icon-wraning {
-  fill: var(--ast-dark-danger-text-color) !important;
+:root.light.dark .wpcf7-icon-wraning,
+:root.light.dark .wpcf7-icon-warning {
+  fill: var(--astc-color-danger) !important;
 }
-body.dark .ast-narrow-container .site-content, body.dark #primary .error-404, body.dark .ast-separate-container .ast-article-inner {
-  background-color: unset;
-}
-body.dark .wpcf7-submit {
+:root.light.dark .wpcf7-submit {
   float: right;
 }
-body.dark .widget_search .search-form input[type=submit] {
+:root.light.dark .widget_search .search-form input[type=submit] {
   max-width: unset !important;
 }
-body.dark .ast-separate-container .ast-article-single:not(.ast-related-post), body.dark .woocommerce.ast-separate-container .ast-woocommerce-container, body.dark .ast-separate-container .error-404, body.dark .ast-separate-container .no-results, body.dark .single.ast-separate-container .site-main .ast-author-meta, body.dark .ast-separate-container .related-posts-title-wrapper, body.dark .ast-separate-container .comments-count-wrapper, body.dark .ast-box-layout.ast-plain-container .site-content, body.dark .ast-padded-layout.ast-plain-container .site-content, body.dark .ast-separate-container .ast-archive-description, body.dark .ast-separate-container .comments-area {
+:root.light.dark .ast-separate-container .ast-article-single:not(.ast-related-post),
+:root.light.dark .woocommerce.ast-separate-container .ast-woocommerce-container,
+:root.light.dark .ast-separate-container .error-404,
+:root.light.dark .ast-separate-container .no-results,
+:root.light.dark .single.ast-separate-container .site-main .ast-author-meta,
+:root.light.dark .ast-separate-container .related-posts-title-wrapper,
+:root.light.dark .ast-separate-container .comments-count-wrapper,
+:root.light.dark .ast-box-layout.ast-plain-container .site-content,
+:root.light.dark .ast-padded-layout.ast-plain-container .site-content,
+:root.light.dark .ast-separate-container .ast-archive-description,
+:root.light.dark .ast-separate-container .comments-area {
   background-color: unset;
-}
-body.dark a.wp-element-button {
-  color: #1E2019 !important;
 }
 
 /*# sourceMappingURL=astra-dark.css.map */

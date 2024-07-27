@@ -1,0 +1,15 @@
+:root.light.dark {
+  --astc-form-accent-color: var(--astc-layer-inverse-surface);
+  --astc-form-input-outline-inactive: #4f4b46;
+  --astc-form-input-background-inactive: #212422;
+  --astc-form-input-background-focus: #373737;
+  --astc-site-background: var(--astc-layer-surface);
+  --astc-layer-info-container: #004a93;
+  --astc-layer-on-info-container: #d6e9ff;
+  --astc-layer-success-container: #209300;
+  --astc-layer-on-success-container: #e6ffd6;
+  --astc-layer-warning-container: #937f00;
+  --astc-layer-on-warning-container: #fff2d6;
+}
+
+/*# sourceMappingURL=theme-dark.css.map */

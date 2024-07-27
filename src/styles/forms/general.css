@@ -9,12 +9,13 @@ input[type=date],
 input[type=url],
 select,
 textarea {
-  border-radius: var(--ast-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
   transition: all 0ms;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--ast-border-color);
-  background: var(--ast-comment-inputs-background);
+  border-color: var(--astc-form-input-outline-inactive);
+  background: var(--astc-form-input-background-inactive);
+  color: var(--astc-text-normal);
   caret-color: #444444;
   box-shadow: none !important;
 }
@@ -29,10 +30,10 @@ input[type=date]:focus,
 input[type=url]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid var(--ast-global-color-0) !important;
-  box-shadow: 0 0 0 1px inset var(--ast-global-color-0) !important;
+  border: 1px solid var(--astc-form-accent-color) !important;
+  box-shadow: 0 0 0 1px inset var(--astc-form-accent-color) !important;
   transition: all 0ms;
-  background-color: #fff;
+  background-color: var(--astc-form-input-background-focus);
 }
 
 input[type=email],
@@ -50,12 +51,12 @@ input[type=date] {
 }
 
 input[type=submit] {
-  border-radius: var(--ast-form-border-radius);
+  border-radius: var(--astc-default-border-radius);
 }
 
 input[type=checkbox],
 input[type=radio] {
-  accent-color: var(--ast-global-color-0);
+  accent-color: var(--astc-form-accent-color);
 }
 
 select {
@@ -66,7 +67,7 @@ select {
   background-size: 12px;
   background-position: calc(100% - 20px) 19px;
   background-repeat: no-repeat;
-  background-color: var(--ast-comment-inputs-background);
+  background-color: var(--astc-form-input-background-inactive);
   line-height: 1.5;
   font-size: 1rem !important;
 }
