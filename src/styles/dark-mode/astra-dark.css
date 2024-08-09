@@ -9,7 +9,8 @@
   color: #ff6b6b;
 }
 :root.light.dark .wpcf7 .cf7_mls_count_step {
-  color: var(--astc-primary-contrast) !important;
+  color: white;
+  mix-blend-mode: difference;
 }
 :root.light.dark .wpcf7 .cf7mls_number_step_wrap .cf7mls_number {
   color: var(--astc-secondary);
@@ -26,7 +27,7 @@
 :root.light.dark input,
 :root.light.dark textarea,
 :root.light.dark select {
-  color: var(--astc-text-normal) !important;
+  color: var(--astc-text-normal);
   caret-color: var(--astc-text-normal);
 }
 :root.light.dark input:focus,
@@ -36,13 +37,14 @@
   color: var(--astc-text-normal) !important;
   caret-color: var(--astc-text-normal);
 }
-:root.light.dark input[type=checkbox],
-:root.light.dark input[type=radio] {
-  mix-blend-mode: overlay;
+:root.light.dark input[type=submit] {
+  background-color: var(--astc-tertiary);
+  color: var(--astc-on-tertiary);
 }
-:root.light.dark input[type=checkbox]:checked,
-:root.light.dark input[type=radio]:checked {
-  mix-blend-mode: unset !important;
+:root.light.dark input[type=checkbox],
+:root.light.dark input[type=radio],
+:root.light.dark input[type=date] {
+  color-scheme: dark;
 }
 :root.light.dark #ast-mobile-site-navigation button.ast-menu-toggle {
   background-color: transparent !important;

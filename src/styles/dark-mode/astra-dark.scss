@@ -12,7 +12,8 @@
       }
 
       .cf7_mls_count_step {
-         color: var(--astc-primary-contrast) !important;
+         color: white;
+         mix-blend-mode: difference;
       }
 
       .cf7mls_number_step_wrap {
@@ -36,7 +37,7 @@
    input,
    textarea,
    select {
-      color: var(--astc-text-normal) !important;
+      color: var(--astc-text-normal);
       caret-color: var(--astc-text-normal);
 
       &:focus {
@@ -46,13 +47,15 @@
       }
    }
 
-   input[type='checkbox'],
-   input[type='radio'] {
-      mix-blend-mode: overlay;
+   input[type='submit'] {
+      background-color: var(--astc-tertiary);
+      color: var(--astc-on-tertiary);
+   }
 
-      &:checked {
-         mix-blend-mode: unset !important;
-      }
+   input[type='checkbox'],
+   input[type='radio'],
+   input[type='date'] {
+      color-scheme: dark;
    }
 
    // TODO: Needs clarification
@@ -93,13 +96,6 @@
    .wpcf7-icon-warning {
       fill: var(--astc-color-danger) !important;
    }
-
-   // TODO: Probably remove
-   //.ast-narrow-container .site-content,
-   //#primary .error-404,
-   //.ast-separate-container .ast-article-inner {
-   //   background-color: unset;
-   //}
 
    .wpcf7-submit {
       float: right;

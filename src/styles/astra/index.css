@@ -1,0 +1,155 @@
+#primary-site-navigation-desktop {
+  /**
+   * Main menu -> Sub-Menu-Container
+   */
+  /**
+   * Main menu -> Top-Level-Container
+   * Menu should have no background on transparent header
+   */
+  /**
+   * Hover & Active
+   */
+}
+#primary-site-navigation-desktop .sub-menu {
+  border-radius: var(--astc-default-border-radius);
+  padding: calc(var(--astc-default-border-radius) * 2 / 3) 0;
+  box-shadow: 0 2px 5px -2px rgba(68, 68, 68, 0.7);
+  border: 1px solid rgba(120, 120, 120, 0.12);
+}
+#primary-site-navigation-desktop .sub-menu .current-menu-item > .menu-link {
+  color: var(--astc-tertiary);
+  font-weight: bold;
+}
+#primary-site-navigation-desktop .main-header-menu {
+  background-color: transparent;
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item {
+  margin-left: 1px;
+  margin-right: 1px;
+  line-height: 47px;
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item > .menu-link {
+  border-radius: var(--astc-default-border-radius);
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item:hover > .menu-link, #primary-site-navigation-desktop .main-header-menu > .menu-item.current-menu-item > .menu-link, #primary-site-navigation-desktop .main-header-menu > .menu-item.current-menu-ancestor > .menu-link {
+  color: var(--astc-layer-on-surface);
+  background: var(--astc-layer-surface-container);
+}
+
+/**
+ * Off-Canvas Menu Toggle
+ */
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header {
+  padding: 0 20px;
+  margin: 8px 0;
+  min-height: 46px;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--astc-layer-surface-container);
+  border: none;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close:focus {
+  border: none;
+}
+
+/**
+ * [Mobile] Off-Canvas Menu
+ */
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .menu-link {
+  line-height: 1.5;
+  padding: 12px 20px;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .ast-menu-toggle {
+  box-shadow: none !important;
+  outline: none;
+  border-radius: 0;
+  line-height: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  overflow: hidden;
+  border: none;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .ast-menu-toggle .ast-icon.icon-arrow svg {
+  margin: 0 1rem;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item:not(.menu-item-has-children) > .menu-link {
+  background-color: unset;
+  color: var(--astc-tertiary);
+  font-weight: bold;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item.menu-item-has-children > .menu-link {
+  color: var(--astc-tertiary);
+  font-weight: bold;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .menu-link {
+  background-color: var(--astc-tertiary);
+  color: var(--astc-on-tertiary) !important;
+  border-bottom-left-radius: var(--astc-default-border-radius);
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .ast-menu-toggle .ast-icon {
+  color: var(--astc-on-tertiary);
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu > .menu-item.ast-submenu-expanded > .menu-link {
+  border-radius: 0 !important;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .sub-menu {
+  padding-left: 20px;
+  background-color: var(--astc-layer-surface-container-low);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .sub-menu .sub-menu {
+  margin-left: 20px;
+  padding-left: 0;
+  background-color: var(--astc-layer-surface-container-high);
+  border-bottom-left-radius: var(--astc-default-border-radius);
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .sub-menu .sub-menu .sub-menu {
+  margin-left: 20px;
+  padding-left: 0;
+  background-color: var(--astc-layer-surface-container-highest);
+}
+.ast-builder-menu-mobile #ast-hf-mobile-menu .sub-menu .menu-link, .ast-builder-menu-mobile #ast-hf-mobile-menu .sub-menu .ast-menu-toggle {
+  animation: ASTC_SubMenuPullDown ease-in-out 0.2s;
+}
+@keyframes ASTC_SubMenuPullDown {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * Add spacing below header
+ */
+.site-header {
+  margin-bottom: 1em !important;
+}
+
+/**
+ * Add spacing above footer
+ */
+.ast-article-single {
+  padding-bottom: 1em !important;
+}
+
+/**
+ * Add hover effect to buttons
+ */
+.wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus {
+  filter: brightness(0.7);
+}
+
+/*# sourceMappingURL=index.css.map */

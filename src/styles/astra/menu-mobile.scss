@@ -1,0 +1,126 @@
+/**
+ * Off-Canvas Menu Toggle
+ */
+#ast-mobile-popup-wrapper {
+   .ast-mobile-popup-inner {
+      .ast-mobile-popup-header {
+         padding: 0 20px;
+         margin: 8px 0;
+         min-height: 46px;
+
+         .menu-toggle-close {
+            width: 46px;
+            height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--astc-layer-surface-container);
+            border: none;
+
+            &:focus {
+               border: none;
+            }
+         }
+      }
+   }
+}
+
+/**
+ * [Mobile] Off-Canvas Menu
+ */
+.ast-builder-menu-mobile #ast-hf-mobile-menu {
+   .menu-item {
+      .menu-link {
+         line-height: 1.5;
+         padding: 12px 20px;
+      }
+
+      .ast-menu-toggle {
+         box-shadow: none !important;
+         outline: none;
+         border-radius: 0;
+         line-height: 48px;
+         height: 48px;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         background: transparent;
+         overflow: hidden;
+         border: none;
+
+         .ast-icon.icon-arrow svg {
+            margin: 0 1rem;
+         }
+      }
+
+      // Current menu item
+      &.current-menu-item {
+         &:not(.menu-item-has-children) > .menu-link {
+            background-color: unset;
+            color: var(--astc-tertiary);
+            font-weight: bold;
+         }
+
+         &.menu-item-has-children > .menu-link {
+            color: var(--astc-tertiary);
+            font-weight: bold;
+         }
+      }
+
+      &.ast-submenu-expanded {
+         & > .menu-link {
+            background-color: var(--astc-tertiary);
+            color: var(--astc-on-tertiary) !important;
+            border-bottom-left-radius: var(--astc-default-border-radius);
+         }
+
+         & > .ast-menu-toggle {
+            .ast-icon {
+               color: var(--astc-on-tertiary);
+            }
+         }
+      }
+   }
+
+   // Remove border-radius from top-level menu items
+   & > .menu-item.ast-submenu-expanded > .menu-link {
+      border-radius: 0 !important;
+   }
+
+   // Sub-Menu layer colors
+   .sub-menu {
+      padding-left: 20px;
+      background-color: var(--astc-layer-surface-container-low);
+      margin-top: 2px;
+      margin-bottom: 2px;
+
+      .sub-menu {
+         margin-left: 20px;
+         padding-left: 0;
+         background-color: var(--astc-layer-surface-container-high);
+         border-bottom-left-radius: var(--astc-default-border-radius);
+
+         .sub-menu {
+            margin-left: 20px;
+            padding-left: 0;
+            background-color: var(--astc-layer-surface-container-highest);
+         }
+      }
+
+      // Animation for sub-menus
+      .menu-link, .ast-menu-toggle {
+         animation: ASTC_SubMenuPullDown ease-in-out 0.2s;
+
+         @keyframes ASTC_SubMenuPullDown {
+            0% {
+               transform: translateY(-30%);
+               opacity: 0;
+            }
+            100% {
+               transform: translateY(0);
+               opacity: 1;
+            }
+         }
+      }
+   }
+}

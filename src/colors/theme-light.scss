@@ -21,7 +21,7 @@
    --astc-on-error: var(--md-sys-color-on-error); // On Error
 
    // Forms
-   --astc-form-accent-color: black;
+   --astc-form-accent-color: var(--astc-primary);
    --astc-form-input-outline-inactive: #d1d5db;
    --astc-form-input-background-inactive: #fcfcfc;
    --astc-form-input-background-focus: white;

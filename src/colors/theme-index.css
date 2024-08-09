@@ -9,7 +9,7 @@
   --astc-on-tertiary: var(--md-sys-color-on-tertiary);
   --astc-error: var(--md-sys-color-error);
   --astc-on-error: var(--md-sys-color-on-error);
-  --astc-form-accent-color: black;
+  --astc-form-accent-color: var(--astc-primary);
   --astc-form-input-outline-inactive: #d1d5db;
   --astc-form-input-background-inactive: #fcfcfc;
   --astc-form-input-background-focus: white;

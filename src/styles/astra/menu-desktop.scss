@@ -1,0 +1,46 @@
+#primary-site-navigation-desktop {
+   /**
+    * Main menu -> Sub-Menu-Container
+    */
+   .sub-menu {
+      border-radius: var(--astc-default-border-radius);
+      padding: calc(var(--astc-default-border-radius) * 2 / 3) 0;
+      box-shadow: 0 2px 5px -2px rgb(68 68 68 / 70%);
+      border: 1px solid rgba(120, 120, 120, 0.12);
+
+      .current-menu-item > .menu-link {
+         color: var(--astc-tertiary);
+         font-weight: bold;
+      }
+   }
+
+   /**
+    * Main menu -> Top-Level-Container
+    * Menu should have no background on transparent header
+    */
+   .main-header-menu {
+      background-color: transparent;
+   }
+
+   /**
+    * Hover & Active
+    */
+   .main-header-menu {
+      & > .menu-item {
+         margin-left: 1px;
+         margin-right: 1px;
+         line-height: 47px;
+
+         & > .menu-link {
+            border-radius: var(--astc-default-border-radius);
+         }
+      }
+
+      & > .menu-item:hover > .menu-link,
+      & > .menu-item.current-menu-item > .menu-link,
+      & > .menu-item.current-menu-ancestor > .menu-link {
+         color: var(--astc-layer-on-surface);
+         background: var(--astc-layer-surface-container);
+      }
+   }
+}

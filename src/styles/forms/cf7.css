@@ -17,8 +17,9 @@
   font-size: 1rem;
   font-weight: 600 !important;
   float: right;
-  background-color: var(--astc-primary);
-  color: var(--astc-on-primary);
+  background-color: var(--astc-tertiary);
+  color: var(--astc-on-tertiary);
+  border: none;
 }
 .wpcf7 .wpcf7-spinner {
   float: right;

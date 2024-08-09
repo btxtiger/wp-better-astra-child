@@ -1,0 +1,8 @@
+/**
+ * Add hover effect to buttons
+ */
+.wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus {
+  filter: brightness(0.7);
+}
+
+/*# sourceMappingURL=button.css.map */

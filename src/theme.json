@@ -45,7 +45,7 @@
             },
             {
                "slug": "on-primary",
-               "color": "var(--astc-primary-hover)",
+               "color": "var(--astc-on-primary)",
                "name": "On-Primary"
             },
             {

@@ -1,0 +1,39 @@
+#primary-site-navigation-desktop {
+  /**
+   * Main menu -> Sub-Menu-Container
+   */
+  /**
+   * Main menu -> Top-Level-Container
+   * Menu should have no background on transparent header
+   */
+  /**
+   * Hover & Active
+   */
+}
+#primary-site-navigation-desktop .sub-menu {
+  border-radius: var(--astc-default-border-radius);
+  padding: calc(var(--astc-default-border-radius) * 2 / 3) 0;
+  box-shadow: 0 2px 5px -2px rgba(68, 68, 68, 0.7);
+  border: 1px solid rgba(120, 120, 120, 0.12);
+}
+#primary-site-navigation-desktop .sub-menu .current-menu-item > .menu-link {
+  color: var(--astc-tertiary);
+  font-weight: bold;
+}
+#primary-site-navigation-desktop .main-header-menu {
+  background-color: transparent;
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item {
+  margin-left: 1px;
+  margin-right: 1px;
+  line-height: 47px;
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item > .menu-link {
+  border-radius: var(--astc-default-border-radius);
+}
+#primary-site-navigation-desktop .main-header-menu > .menu-item:hover > .menu-link, #primary-site-navigation-desktop .main-header-menu > .menu-item.current-menu-item > .menu-link, #primary-site-navigation-desktop .main-header-menu > .menu-item.current-menu-ancestor > .menu-link {
+  color: var(--astc-layer-on-surface);
+  background: var(--astc-layer-surface-container);
+}
+
+/*# sourceMappingURL=menu-desktop.css.map */

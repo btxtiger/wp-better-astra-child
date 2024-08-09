@@ -1,0 +1,15 @@
+/**
+ * Add spacing below header
+ */
+.site-header {
+  margin-bottom: 1em !important;
+}
+
+/**
+ * Add spacing above footer
+ */
+.ast-article-single {
+  padding-bottom: 1em !important;
+}
+
+/*# sourceMappingURL=page.css.map */

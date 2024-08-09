@@ -10,7 +10,7 @@ input[type='url'],
 select,
 textarea {
    border-radius: var(--astc-default-border-radius);
-   transition: all 0ms;
+   transition: all 200ms ease-in-out;
 
    border-width: 1px;
    border-style: solid;
@@ -23,7 +23,7 @@ textarea {
    &:focus {
       border: 1px solid var(--astc-form-accent-color) !important;
       box-shadow: 0 0 0 1px inset var(--astc-form-accent-color) !important;
-      transition: all 0ms;
+      transition: all 200ms ease-in-out;
       background-color: var(--astc-form-input-background-focus);
    }
 }

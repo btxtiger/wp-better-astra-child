@@ -1,0 +1,17 @@
+.rainbow-box {
+  --brand-gradient: #17cf54, #00bbcc, #5c7cff, #a164f7, #ef4ea3, #ff5c5c, #f99848, #d0bc25;
+  background-image: linear-gradient(to right, var(--brand-gradient));
+}
+.rainbow-box::before {
+  opacity: 0.875;
+  background-color: #1e2328;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+
+/*# sourceMappingURL=tricks.css.map */

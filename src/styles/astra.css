@@ -11,10 +11,6 @@
   padding-top: 2rem !important;
   padding-bottom: 4rem !important;
 }
-#primary .ast-article-single {
-  padding-top: 1em !important;
-  padding-bottom: 1em !important;
-}
 
 section.ast-single-entry-banner a.ast-button.ast-badge-tax {
   border-radius: var(--ast-form-border-radius);
@@ -46,66 +42,15 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
   object-position: top;
 }
 
-#ast-mobile-site-navigation button.ast-menu-toggle {
-  box-shadow: none !important;
-  outline: none;
-  border-radius: 0;
-  height: 53px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  overflow: hidden;
-  border: none;
-}
-#ast-mobile-site-navigation button.ast-menu-toggle .ast-icon.icon-arrow svg {
-  margin: 0 1rem;
-}
-
-#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header {
-  padding: 6px 20px;
-}
-#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close {
-  width: 46px;
-  height: 46px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--astc-layer-surface-container);
-  border: none;
-}
-#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close:focus {
-  border: none;
-}
-
-#ast-mobile-site-navigation .main-header-menu .menu-item .menu-link {
-  line-height: 1.5;
-  padding: 10px 20px;
-}
-
-#ast-mobile-site-navigation .main-header-menu .menu-item .menu-item .menu-link {
-  margin-left: 20px;
-}
-
-#primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item {
-  margin-left: 1px;
-  margin-right: 1px;
-}
-#primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item > .menu-link {
-  border-radius: var(--astc-default-border-radius);
-}
-#primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item:hover > .menu-link, #primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item.current-menu-item > .menu-link, #primary-site-navigation-desktop > .main-navigation > .main-header-menu > .menu-item.current-menu-ancestor > .menu-link {
-  color: var(--astc-layer-on-surface);
-  background: var(--astc-layer-surface-container);
+.ast-narrow-container,
+.ast-separate-container {
+  background-color: var(--astc-site-background);
 }
 
 @media (max-width: 544px) {
   .wp-block-columns .wp-block-column:not(:last-child) {
     margin-bottom: 0;
   }
-}
-.wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus {
-  filter: brightness(0.7);
 }
 
 /*# sourceMappingURL=astra.css.map */
