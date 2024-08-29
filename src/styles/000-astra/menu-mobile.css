@@ -18,6 +18,15 @@
 #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close:focus {
   border: none;
 }
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 {
+  padding: 2px 20px;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1 .ast-builder-button-wrap, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2 .ast-builder-button-wrap, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 .ast-builder-button-wrap {
+  width: 100%;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1 .ast-builder-button-wrap .ast-custom-button-link, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2 .ast-builder-button-wrap .ast-custom-button-link, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 .ast-builder-button-wrap .ast-custom-button-link {
+  text-align: center;
+}
 
 /**
  * [Mobile] Off-Canvas Menu
@@ -25,6 +34,8 @@
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .menu-link {
   line-height: 1.5;
   padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .ast-menu-toggle {
   box-shadow: none !important;

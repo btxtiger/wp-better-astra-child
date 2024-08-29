@@ -1,0 +1,7 @@
+/**
+ * Fix verse bg and color
+ */
+.wp-block-verse {
+   background: var(--astc-layer-surface-container);
+   color: var(--astc-text-normal);
+}

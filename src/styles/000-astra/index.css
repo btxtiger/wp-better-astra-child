@@ -56,6 +56,15 @@
 #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-header .menu-toggle-close:focus {
   border: none;
 }
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 {
+  padding: 2px 20px;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1 .ast-builder-button-wrap, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2 .ast-builder-button-wrap, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 .ast-builder-button-wrap {
+  width: 100%;
+}
+#ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-1 .ast-builder-button-wrap .ast-custom-button-link, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-2 .ast-builder-button-wrap .ast-custom-button-link, #ast-mobile-popup-wrapper .ast-mobile-popup-inner .ast-mobile-popup-content .ast-header-button-3 .ast-builder-button-wrap .ast-custom-button-link {
+  text-align: center;
+}
 
 /**
  * [Mobile] Off-Canvas Menu
@@ -63,6 +72,8 @@
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .menu-link {
   line-height: 1.5;
   padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item .ast-menu-toggle {
   box-shadow: none !important;
@@ -146,10 +157,47 @@
 }
 
 /**
+ * Blocksatz for desktop devices
+ */
+@media (min-width: 800px) {
+  .entry-content p:not(.has-text-align-center) {
+    text-align: justify;
+  }
+}
+/**
  * Add hover effect to buttons
  */
 .wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus {
   filter: brightness(0.7);
+}
+
+/**
+ * Auto apply border-radius to all base blocks
+ */
+.wp-block-column, .wp-block-group, blockquote, .wp-block-verse {
+  border-radius: var(--astc-default-border-radius);
+}
+
+/**
+ * Fix pagination bg and color
+ */
+.ast-pagination .page-numbers:not(.prev), .ast-pagination .page-numbers:not(.next) {
+  background: var(--astc-layer-surface-container);
+  color: var(--astc-text-normal);
+}
+.ast-pagination .page-numbers.current {
+  background: var(--astc-primary);
+  color: var(--astc-on-primary);
+}
+
+/**
+ * Fix search form bg and color
+ */
+.search-form {
+  border-radius: var(--astc-default-border-radius) !important;
+}
+.search-form .search-field {
+  background-color: var(--astc-form-input-background-inactive) !important;
 }
 
 /*# sourceMappingURL=index.css.map */

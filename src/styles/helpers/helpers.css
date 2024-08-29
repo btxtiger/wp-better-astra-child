@@ -1,0 +1,9 @@
+.hyphens {
+  hyphens: auto;
+}
+
+.rounded {
+  border-radius: var(--astc-default-border-radius);
+}
+
+/*# sourceMappingURL=helpers.css.map */

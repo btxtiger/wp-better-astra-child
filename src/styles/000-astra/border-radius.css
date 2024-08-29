@@ -1,0 +1,8 @@
+/**
+ * Auto apply border-radius to all base blocks
+ */
+.wp-block-column, .wp-block-group, blockquote, .wp-block-verse {
+  border-radius: var(--astc-default-border-radius);
+}
+
+/*# sourceMappingURL=border-radius.css.map */

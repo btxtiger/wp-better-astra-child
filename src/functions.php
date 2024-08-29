@@ -30,8 +30,8 @@ require_once get_stylesheet_directory() . '/scripts/cf7-editor.php';
 require_once get_stylesheet_directory() . '/scripts/wp-admin.php';
 //require_once get_stylesheet_directory() . '/scripts/wp-github-updater.php';
 
+// Autoload all scripts form scripts/autoload directory using DirectoryIterator including subdirectories
+foreach (glob(get_stylesheet_directory() . '/scripts/autoload/**/*.php', GLOB_BRACE) as $autoloadFile) {
+   require_once $autoloadFile;
+}
 
-
-/**
- * Comment
- */

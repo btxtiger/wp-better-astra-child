@@ -1,0 +1,10 @@
+/**
+ * Fix search form bg and color
+ */
+.search-form {
+   border-radius: var(--astc-default-border-radius) !important;
+
+   .search-field {
+      background-color: var(--astc-form-input-background-inactive) !important;
+   }
+}

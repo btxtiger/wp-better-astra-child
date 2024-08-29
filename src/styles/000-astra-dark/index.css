@@ -1,0 +1,8 @@
+:root.dark iframe[data-service=google-maps] {
+  filter: invert(0.9);
+}
+:root.dark img {
+  filter: brightness(0.8);
+}
+
+/*# sourceMappingURL=index.css.map */

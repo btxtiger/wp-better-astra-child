@@ -1,0 +1,13 @@
+/**
+ * Fix pagination bg and color
+ */
+.ast-pagination .page-numbers:not(.prev), .ast-pagination .page-numbers:not(.next) {
+  background: var(--astc-layer-surface-container);
+  color: var(--astc-text-normal);
+}
+.ast-pagination .page-numbers.current {
+  background: var(--astc-primary);
+  color: var(--astc-on-primary);
+}
+
+/*# sourceMappingURL=pagination.css.map */

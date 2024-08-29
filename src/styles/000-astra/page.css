@@ -12,4 +12,13 @@
   padding-bottom: 1em !important;
 }
 
+/**
+ * Blocksatz for desktop devices
+ */
+@media (min-width: 800px) {
+  .entry-content p:not(.has-text-align-center) {
+    text-align: justify;
+  }
+}
+
 /*# sourceMappingURL=page.css.map */

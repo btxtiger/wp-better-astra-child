@@ -6,15 +6,16 @@
 // Helpers
 @import "helpers/card";
 @import "helpers/rtl";
+@import "helpers/helpers";
 
 // Theme
 @import "wordpress";
 @import "astra";
-@import 'astra/index';
+@import '000-astra/index';
+@import "000-astra-dark/index";
+@import "000-fix-wordpress/index";
 
 @import "dark-mode/astra-dark";
-@import "dark-mode/cf7-dark";
-@import "dark-mode/misc";
 
 // Forms
 @import "forms/general";
