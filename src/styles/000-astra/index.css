@@ -198,6 +198,7 @@
 }
 .search-form .search-field {
   background-color: var(--astc-form-input-background-inactive) !important;
+  border-radius: var(--astc-default-border-radius);
 }
 
 /*# sourceMappingURL=index.css.map */
