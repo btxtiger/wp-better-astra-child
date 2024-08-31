@@ -93,20 +93,20 @@
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item:not(.menu-item-has-children) > .menu-link {
   background-color: unset;
-  color: var(--astc-tertiary);
+  color: var(--ast-global-color-2);
   font-weight: bold;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item.menu-item-has-children > .menu-link {
-  color: var(--astc-tertiary);
+  color: var(--ast-global-color-2);
   font-weight: bold;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .menu-link {
-  background-color: var(--astc-tertiary);
-  color: var(--astc-on-tertiary) !important;
+  background-color: var(--astc-mobile-menu-expanded-background);
+  color: var(--astc-mobile-menu-expanded-text) !important;
   border-bottom-left-radius: var(--astc-default-border-radius);
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .ast-menu-toggle .ast-icon {
-  color: var(--astc-on-tertiary);
+  color: var(--astc-mobile-menu-expanded-text);
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu > .menu-item.ast-submenu-expanded > .menu-link {
   border-radius: 0 !important;
@@ -174,14 +174,14 @@
 /**
  * Auto apply border-radius to all base blocks
  */
-.wp-block-column, .wp-block-group, blockquote, .wp-block-verse {
+.wp-block-column, .wp-block-group, blockquote, .wp-block-verse, .wp-block-uagb-container, img {
   border-radius: var(--astc-default-border-radius);
 }
 
 /**
  * Fix pagination bg and color
  */
-.ast-pagination .page-numbers:not(.prev), .ast-pagination .page-numbers:not(.next) {
+.ast-pagination .page-numbers:not(.prev):not(.next):not(.current) {
   background: var(--astc-layer-surface-container);
   color: var(--astc-text-normal);
 }

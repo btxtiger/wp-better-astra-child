@@ -4,6 +4,12 @@
 
       .codedropz-upload-container {
          background-color: var(--astc-form-input-background-inactive);
+
+         .codedropz-upload-inner {
+            h3 {
+               margin-top: 4px;
+            }
+         }
       }
    }
 }

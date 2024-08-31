@@ -3,7 +3,7 @@
  */
 .ast-pagination {
    .page-numbers {
-      &:not(.prev), &:not(.next) {
+      &:not(.prev):not(.next):not(.current) {
          background: var(--astc-layer-surface-container);
          color: var(--astc-text-normal);
       }

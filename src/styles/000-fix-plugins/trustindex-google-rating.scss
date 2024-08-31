@@ -1,0 +1,18 @@
+.ti-widget.ti-goog {
+   z-index: 1 !important;
+
+   .ti-review-item > div.ti-inner {
+      border-radius: var(--astc-default-border-radius) !important;
+      background: var(--astc-layer-surface-container-high) !important;
+      color: var(--astc-text-normal) !important;
+
+      .ti-name, .ti-date {
+         color: var(--astc-text-normal) !important;
+      }
+
+      .ti-rating-text *, .ti-read-more-active {
+         color: var(--astc-text-normal) !important;
+      }
+   }
+
+}

@@ -13,13 +13,7 @@
   display: block;
 }
 .wpcf7 .wpcf7-submit {
-  padding: 0.75rem 1.25rem !important;
-  font-size: 1rem;
-  font-weight: 600 !important;
   float: right;
-  background-color: var(--astc-tertiary);
-  color: var(--astc-on-tertiary);
-  border: none;
 }
 .wpcf7 .wpcf7-spinner {
   float: right;

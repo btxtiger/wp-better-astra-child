@@ -61,6 +61,18 @@
   border-radius: var(--astc-default-border-radius);
 }
 
+.full-height {
+  height: 100%;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+:root.dark .dark-invert {
+  filter: invert(1);
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -293,20 +305,20 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item:not(.menu-item-has-children) > .menu-link {
   background-color: unset;
-  color: var(--astc-tertiary);
+  color: var(--ast-global-color-2);
   font-weight: bold;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.current-menu-item.menu-item-has-children > .menu-link {
-  color: var(--astc-tertiary);
+  color: var(--ast-global-color-2);
   font-weight: bold;
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .menu-link {
-  background-color: var(--astc-tertiary);
-  color: var(--astc-on-tertiary) !important;
+  background-color: var(--astc-mobile-menu-expanded-background);
+  color: var(--astc-mobile-menu-expanded-text) !important;
   border-bottom-left-radius: var(--astc-default-border-radius);
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu .menu-item.ast-submenu-expanded > .ast-menu-toggle .ast-icon {
-  color: var(--astc-on-tertiary);
+  color: var(--astc-mobile-menu-expanded-text);
 }
 .ast-builder-menu-mobile #ast-hf-mobile-menu > .menu-item.ast-submenu-expanded > .menu-link {
   border-radius: 0 !important;
@@ -374,14 +386,14 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
 /**
  * Auto apply border-radius to all base blocks
  */
-.wp-block-column, .wp-block-group, blockquote, .wp-block-verse {
+.wp-block-column, .wp-block-group, blockquote, .wp-block-verse, .wp-block-uagb-container, img {
   border-radius: var(--astc-default-border-radius);
 }
 
 /**
  * Fix pagination bg and color
  */
-.ast-pagination .page-numbers:not(.prev), .ast-pagination .page-numbers:not(.next) {
+.ast-pagination .page-numbers:not(.prev):not(.next):not(.current) {
   background: var(--astc-layer-surface-container);
   color: var(--astc-text-normal);
 }
@@ -402,10 +414,13 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
 }
 
 :root.dark iframe[data-service=google-maps] {
-  filter: invert(0.9);
+  filter: invert(0.9) hue-rotate(190deg);
 }
 :root.dark img {
   filter: brightness(0.8);
+}
+:root.dark .site-logo-img img {
+  filter: invert(1);
 }
 
 /**
@@ -413,6 +428,21 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
  */
 .widget {
   margin-bottom: 1em;
+}
+
+.ti-widget.ti-goog {
+  z-index: 1 !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner {
+  border-radius: var(--astc-default-border-radius) !important;
+  background: var(--astc-layer-surface-container-high) !important;
+  color: var(--astc-text-normal) !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-name, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-date {
+  color: var(--astc-text-normal) !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-rating-text *, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-read-more-active {
+  color: var(--astc-text-normal) !important;
 }
 
 :root.light.dark {
@@ -455,8 +485,8 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
   caret-color: var(--astc-text-normal);
 }
 :root.light.dark input[type=submit] {
-  background-color: var(--astc-tertiary);
-  color: var(--astc-on-tertiary);
+  background-color: var(--ast-global-color-2);
+  color: var(--ast-global-color-3);
 }
 :root.light.dark input[type=checkbox],
 :root.light.dark input[type=radio],
@@ -485,9 +515,6 @@ section.ast-single-entry-banner a.ast-button.ast-badge-tax {
 :root.light.dark .wpcf7-icon-wraning,
 :root.light.dark .wpcf7-icon-warning {
   fill: var(--astc-color-danger) !important;
-}
-:root.light.dark .wpcf7-submit {
-  float: right;
 }
 :root.light.dark .widget_search .search-form input[type=submit] {
   max-width: unset !important;
@@ -599,13 +626,7 @@ label {
   display: block;
 }
 .wpcf7 .wpcf7-submit {
-  padding: 0.75rem 1.25rem !important;
-  font-size: 1rem;
-  font-weight: 600 !important;
   float: right;
-  background-color: var(--astc-tertiary);
-  color: var(--astc-on-tertiary);
-  border: none;
 }
 .wpcf7 .wpcf7-spinner {
   float: right;
@@ -643,6 +664,9 @@ label {
 }
 .wpcf7 .codedropz-upload-handler .codedropz-upload-container {
   background-color: var(--astc-form-input-background-inactive);
+}
+.wpcf7 .codedropz-upload-handler .codedropz-upload-container .codedropz-upload-inner h3 {
+  margin-top: 4px;
 }
 
 .wpcf7 .digital_signature-pad {

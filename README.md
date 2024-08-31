@@ -8,9 +8,17 @@ define( 'ASTC_NO_DARK_MODE', true );
 ```
 
 ## Set custom theme properties
-```css
+```scss
 body.astc-override {
    --astc-default-border-radius: 6px;
+   
+   // For a strong accent color, you might want to reassign the astra secondary color
+   --ast-global-color-2: var(--astc-layer-tertiary-container);
+   --ast-global-color-3: var(--astc-layer-on-tertiary-container);
+   
+   // To change the mobile menu expanded color
+   --astc-mobile-menu-expanded-background: var(--astc-primary);
+   --astc-mobile-menu-expanded-text: var(--astc-on-primary);
 }
 :root:not(.dark) body.astc-override {
    --astc-site-background: #fffbf5 !important;

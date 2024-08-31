@@ -1,7 +1,7 @@
 /**
  * Fix pagination bg and color
  */
-.ast-pagination .page-numbers:not(.prev), .ast-pagination .page-numbers:not(.next) {
+.ast-pagination .page-numbers:not(.prev):not(.next):not(.current) {
   background: var(--astc-layer-surface-container);
   color: var(--astc-text-normal);
 }

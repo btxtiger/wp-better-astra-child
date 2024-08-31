@@ -1,0 +1,16 @@
+.ti-widget.ti-goog {
+  z-index: 1 !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner {
+  border-radius: var(--astc-default-border-radius) !important;
+  background: var(--astc-layer-surface-container-high) !important;
+  color: var(--astc-text-normal) !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-name, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-date {
+  color: var(--astc-text-normal) !important;
+}
+.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-rating-text *, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-read-more-active {
+  color: var(--astc-text-normal) !important;
+}
+
+/*# sourceMappingURL=trustindex-google-rating.css.map */

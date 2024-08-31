@@ -4,5 +4,8 @@
 .wpcf7 .codedropz-upload-handler .codedropz-upload-container {
   background-color: var(--astc-form-input-background-inactive);
 }
+.wpcf7 .codedropz-upload-handler .codedropz-upload-container .codedropz-upload-inner h3 {
+  margin-top: 4px;
+}
 
 /*# sourceMappingURL=cf7-codedropz-file-upload.css.map */

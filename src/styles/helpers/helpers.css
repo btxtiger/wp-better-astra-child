@@ -6,4 +6,16 @@
   border-radius: var(--astc-default-border-radius);
 }
 
+.full-height {
+  height: 100%;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+:root.dark .dark-invert {
+  filter: invert(1);
+}
+
 /*# sourceMappingURL=helpers.css.map */

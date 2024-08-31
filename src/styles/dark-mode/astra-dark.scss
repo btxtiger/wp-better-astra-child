@@ -48,8 +48,8 @@
    }
 
    input[type='submit'] {
-      background-color: var(--astc-tertiary);
-      color: var(--astc-on-tertiary);
+      background-color: var(--ast-global-color-2);
+      color: var(--ast-global-color-3);
    }
 
    input[type='checkbox'],
@@ -97,9 +97,6 @@
       fill: var(--astc-color-danger) !important;
    }
 
-   .wpcf7-submit {
-      float: right;
-   }
    .widget_search .search-form input[type='submit'] {
       max-width: unset !important;
    }
