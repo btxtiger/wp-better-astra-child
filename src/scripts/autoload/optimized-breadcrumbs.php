@@ -68,3 +68,4 @@ function list_child_pages() {
 }
 add_shortcode('list_child_pages', 'list_child_pages');
 
+// [list_child_pages]

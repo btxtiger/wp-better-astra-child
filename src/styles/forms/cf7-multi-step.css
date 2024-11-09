@@ -18,6 +18,7 @@
 }
 .wpcf7 .cf7mls .cf7mls_progress_bar li .cf7mls_progress_bar_title {
   font-size: 0.75em;
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=cf7-multi-step.css.map */

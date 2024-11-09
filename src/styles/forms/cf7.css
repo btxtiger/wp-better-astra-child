@@ -20,7 +20,6 @@
 }
 .wpcf7 textarea {
   resize: vertical;
-  min-height: 100px;
 }
 .wpcf7 h1,
 .wpcf7 h2,
@@ -41,6 +40,7 @@
 .wpcf7 label {
   font-size: 0.938rem;
   font-weight: normal;
+  line-height: 1.5;
 }
 .wpcf7 button, .wpcf7 input[type=submit], .wpcf7 input[type=reset], .wpcf7 input[type=button] {
   border-radius: var(--astc-default-border-radius) !important;

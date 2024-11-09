@@ -4,3 +4,8 @@
 .wp-block-column, .wp-block-group, blockquote, .wp-block-verse, .wp-block-uagb-container, img {
    border-radius: var(--astc-default-border-radius);
 }
+
+// But not on the main logo
+header .custom-logo-link img {
+   border-radius: 0;
+}

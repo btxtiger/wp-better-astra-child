@@ -5,4 +5,8 @@
   border-radius: var(--astc-default-border-radius);
 }
 
+header .custom-logo-link img {
+  border-radius: 0;
+}
+
 /*# sourceMappingURL=border-radius.css.map */

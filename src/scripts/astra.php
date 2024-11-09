@@ -21,11 +21,16 @@ function wp_better_astra_enqueue_theme($dependencies) {
          $fileUrl = content_url(str_replace(WP_CONTENT_DIR, '', $file));
 
          // if file data contains string '.light', replace it with ':root'
-         $fileContent = file_get_contents($file);
-         $fileContent = preg_replace('/^\s*\.light\s*{\s*$/m', ':root:not(.dark).light {', $fileContent);
-         $fileContent = preg_replace('/^\s*\.dark\s*{\s*$/m', ':root.light.dark {', $fileContent);
-         file_put_contents($file, $fileContent);
+         /**
+          * We need:
+          * :root:not(.dark).light
+          * :root.light.dark
+          */
 
+         // $fileContent = file_get_contents($file);
+         // $fileContent = preg_replace('/^\s*\.light\s*{\s*$/m', ':root:not(.dark).light {', $fileContent);
+         // $fileContent = preg_replace('/^\s*\.dark\s*{\s*$/m', ':root.light.dark {', $fileContent);
+         // file_put_contents($file, $fileContent);
 
          wp_enqueue_style("wp-better-astra-child-custom-" . pathinfo($file, PATHINFO_FILENAME), $fileUrl, $dependencies, $version, 'all');
       }

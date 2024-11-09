@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["widgets.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAGA;EACG","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["widgets.scss","verse.scss","blockquote.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAGA;EACG;;;ACJH;AAAA;AAAA;AAGA;EACG;EACA;;;ACLH;AAAA;AAAA;AAGA;EACG","file":"index.css"}

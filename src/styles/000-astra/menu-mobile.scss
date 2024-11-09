@@ -24,9 +24,10 @@
       }
 
       .ast-mobile-popup-content {
-
          // Fix for buttons in off-canvas menu
-         .ast-header-button-1, .ast-header-button-2, .ast-header-button-3 {
+         .ast-header-button-1,
+         .ast-header-button-2,
+         .ast-header-button-3 {
             padding: 2px 20px;
             .ast-builder-button-wrap {
                width: 100%;
@@ -46,7 +47,7 @@
    .menu-item {
       .menu-link {
          line-height: 1.5;
-         padding: 12px 20px;
+         padding: 16px 20px;
          display: inline-flex;
          align-items: center;
       }
@@ -55,8 +56,8 @@
          box-shadow: none !important;
          outline: none;
          border-radius: 0;
-         line-height: 48px;
-         height: 48px;
+         line-height: 56px;
+         height: 56px;
          display: inline-flex;
          align-items: center;
          justify-content: center;
@@ -64,8 +65,10 @@
          overflow: hidden;
          border: none;
 
-         .ast-icon.icon-arrow svg {
-            margin: 0 1rem;
+         .ast-icon.icon-arrow {
+            svg {
+               margin: 0 1rem;
+            }
          }
       }
 
@@ -73,12 +76,12 @@
       &.current-menu-item {
          &:not(.menu-item-has-children) > .menu-link {
             background-color: unset;
-            color: var(--ast-global-color-2);
+            color: var(--astc-mobile-menu-active-text);
             font-weight: bold;
          }
 
          &.menu-item-has-children > .menu-link {
-            color: var(--ast-global-color-2);
+            color: var(--astc-mobile-menu-active-text);
             font-weight: bold;
          }
       }
@@ -96,6 +99,11 @@
             }
          }
       }
+
+      // Remove border bottom line from last menu item
+      &:last-child .menu-link {
+         border-bottom-width: 0 !important;
+      }
    }
 
    // Remove border-radius from top-level menu items
@@ -107,8 +115,6 @@
    .sub-menu {
       padding-left: 20px;
       background-color: var(--astc-layer-surface-container-low);
-      margin-top: 2px;
-      margin-bottom: 2px;
 
       .sub-menu {
          margin-left: 20px;
@@ -124,7 +130,8 @@
       }
 
       // Animation for sub-menus
-      .menu-link, .ast-menu-toggle {
+      .menu-link,
+      .ast-menu-toggle {
          animation: ASTC_SubMenuPullDown ease-in-out 0.2s;
 
          @keyframes ASTC_SubMenuPullDown {
@@ -140,4 +147,3 @@
       }
    }
 }
-

@@ -1,10 +1,9 @@
 /**
  * Add spacing below header
  */
-.site-header {
-  margin-bottom: 1em !important;
-}
-
+/**
+ * Add spacing depending on top content
+ */
 /**
  * Add spacing above footer
  */
@@ -16,7 +15,7 @@
  * Blocksatz for desktop devices
  */
 @media (min-width: 800px) {
-  .entry-content p:not(.has-text-align-center) {
+  .entry-content p:not(.has-text-align-center, .no-text-justify, .uagb-ifb-desc) {
     text-align: justify;
   }
 }

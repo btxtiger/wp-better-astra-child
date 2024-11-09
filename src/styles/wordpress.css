@@ -1,59 +1,11 @@
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.17rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: 0.83rem;
-}
-
-h6 {
-  font-size: 0.67rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.5rem !important;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
   margin-top: 1rem;
 }
-
-body {
-  font-size: 1rem;
-}
-
-.entry-content p {
-  margin-bottom: 1em;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.font-serif {
-  font-family: var(--font-serif), serif;
-}
-
-.font-sans {
-  font-family: var(--font-sans-serif), sans-serif;
-}
-
-.font-monospace {
-  font-family: var(--font-monospace), monospace;
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: -0.75em;
 }
 
 .pre-wrap {

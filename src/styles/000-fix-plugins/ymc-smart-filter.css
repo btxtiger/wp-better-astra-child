@@ -1,18 +1,3 @@
-.ti-widget.ti-goog {
-  z-index: 1 !important;
-}
-.ti-widget.ti-goog .ti-review-item > div.ti-inner {
-  border-radius: var(--astc-default-border-radius) !important;
-  background: var(--astc-layer-surface-container-high) !important;
-  color: var(--astc-text-normal) !important;
-}
-.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-name, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-date {
-  color: var(--astc-text-normal) !important;
-}
-.ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-rating-text *, .ti-widget.ti-goog .ti-review-item > div.ti-inner .ti-read-more-active {
-  color: var(--astc-text-normal) !important;
-}
-
 .ymc-smart-filter-container .search-layout .form-inner .component-input .field-search {
   border-top-left-radius: var(--astc-default-border-radius);
   border-bottom-left-radius: var(--astc-default-border-radius);
@@ -90,4 +75,4 @@
   color: var(--astc-tertiary);
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=ymc-smart-filter.css.map */

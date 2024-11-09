@@ -11,7 +11,7 @@
          color: #ff6b6b;
       }
 
-      .cf7_mls_count_step {
+      .cf7_mls_count_step, .cf7_mls_check {
          color: white;
          mix-blend-mode: difference;
       }
@@ -71,10 +71,10 @@
    //   }
    //}
 
-   #ast-mobile-site-navigation button.ast-menu-toggle {
-      background-color: transparent !important;
-      color: white !important;
-   }
+   //#ast-mobile-site-navigation button.ast-menu-toggle {
+   //   background-color: transparent !important;
+   //   color: white !important;
+   //}
 
    .cf7mls_progress_bar_percent {
       background-color: var(--astc-layer-background-2);

@@ -5,4 +5,19 @@
   margin-bottom: 1em;
 }
 
+/**
+ * Fix verse bg and color
+ */
+.wp-block-verse {
+  background: var(--astc-layer-surface-container);
+  color: var(--astc-text-normal);
+}
+
+/**
+ * Fix Blockquote
+ */
+.wp-block-quote {
+  border-color: var(--astc-layer-surface-container-highest) !important;
+}
+
 /*# sourceMappingURL=index.css.map */

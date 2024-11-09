@@ -18,6 +18,7 @@
   --astc-site-background: var(--astc-layer-surface);
   --astc-mobile-menu-expanded-background: var(--ast-global-color-2);
   --astc-mobile-menu-expanded-text: var(--ast-global-color-3);
+  --astc-mobile-menu-active-text: var(--ast-global-color-2);
   --astc-layer-surface: var(--md-sys-color-surface);
   --astc-layer-on-surface: var(--md-sys-color-on-surface);
   --astc-layer-inverse-surface: var(--md-sys-color-inverse-surface);

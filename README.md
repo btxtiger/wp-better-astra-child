@@ -5,6 +5,13 @@ A child theme for Astra theme with awesome additional features and customization
 Set the following variable in your wp-config.php
 ```php
 define( 'ASTC_NO_DARK_MODE', true );
+
+# Preload Number for WP Fastest Cache
+define( 'WPFC_PRELOAD_NUMBER', 15 );
+
+# Disable Auto P for ContactForm 7
+define( 'WPCF7_AUTOP', false );
+
 ```
 
 ## Set custom theme properties
@@ -16,9 +23,10 @@ body.astc-override {
    --ast-global-color-2: var(--astc-layer-tertiary-container);
    --ast-global-color-3: var(--astc-layer-on-tertiary-container);
    
-   // To change the mobile menu expanded color
+   // To change the mobile menu colors
    --astc-mobile-menu-expanded-background: var(--astc-primary);
    --astc-mobile-menu-expanded-text: var(--astc-on-primary);
+   --astc-mobile-menu-active-text: var(--astc-primary);
 }
 :root:not(.dark) body.astc-override {
    --astc-site-background: #fffbf5 !important;
