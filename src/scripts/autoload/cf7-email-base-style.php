@@ -1,9 +1,7 @@
 <?php
 
-// Activate Shortcode Execution for Contact Form 7
-add_filter( 'wpcf7_form_elements', 'do_shortcode' );
 
-function wrap_cf7_email_body($components, $contact_form, $mail) {
+function astc_wrap_cf7_email_body($components, $contact_form, $mail) {
    $body = $components['body'];
 
    // if $body is already html doc, then return
@@ -50,4 +48,4 @@ function wrap_cf7_email_body($components, $contact_form, $mail) {
 
    return $components;
 }
-add_filter('wpcf7_mail_components', 'wrap_cf7_email_body', 10, 3);
+add_filter('wpcf7_mail_components', 'astc_wrap_cf7_email_body', 10, 3);

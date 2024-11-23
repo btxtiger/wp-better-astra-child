@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # compile all scss files in place to css
-sass src --update
+npx sass src --update
 
 # Extract version from package.json
 VERSION=$(node -p -e "require('./package.json').version")
@@ -17,7 +17,7 @@ rm -rf $releaseDir/*
 cp -R src/* $releaseDir/
 
 # Run Gulp task
-gulp
+npx gulp
 
 # Replace {{ package.version }} in style.css
 sed -i'' -e "s/{{ package.version }}/$VERSION/g" "$releaseDir/style.css"

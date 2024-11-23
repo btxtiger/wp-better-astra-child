@@ -17,19 +17,6 @@ if ($packageVersion === '{{ package.version }}') {
 }
 define('CHILD_THEME_WP_BETTER_ASTRA_CHILD_VERSION', $packageVersion);
 
-require_once get_stylesheet_directory() . '/scripts/handle-dark-mode.php';
-require_once get_stylesheet_directory() . '/scripts/override-variables.php';
-require_once get_stylesheet_directory() . '/scripts/wordpress.php';
-require_once get_stylesheet_directory() . '/scripts/astra.php';
-
-require_once get_stylesheet_directory() . '/scripts/fontawesome.php';
-
-require_once get_stylesheet_directory() . '/scripts/cf7.php';
-require_once get_stylesheet_directory() . '/scripts/cf7-editor.php';
-
-require_once get_stylesheet_directory() . '/scripts/wp-admin.php';
-//require_once get_stylesheet_directory() . '/scripts/wp-github-updater.php';
-
 // Autoload all scripts form scripts/autoload directory using DirectoryIterator including subdirectories
 $directory = get_stylesheet_directory() . '/scripts/autoload/';
 $phpFiles = [];
@@ -43,4 +30,3 @@ foreach ($iterator as $file) {
       require_once $file->getPathname();
    }
 }
-

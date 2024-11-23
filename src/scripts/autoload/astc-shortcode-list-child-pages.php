@@ -1,36 +1,9 @@
 <?php
 
 /**
- * This file contains all the functions that are used to optimize the breadcrumbs.
- * Adds the shortcode list_child_pages to list all child pages of the current page.
+ * Usage: [list_child_pages]
  */
-
-// add_filter( 'astra_breadcrumb_trail_labels', function( $args ) {
-//    $args['home'] = __( 'Praxis', 'astra' );
-//    return $args;
-// });
-
-
-add_filter( 'astra_breadcrumb_trail_items' , function ($args) {
-   if (count($args) > 2) {
-      unset($args[0]);
-   }
-
-   return $args;
-});
-
-// OTHER
-function get_page_path($page_id) {
-   $page = get_post($page_id);
-   $path = array();
-   while ($page->post_parent) {
-      $page = get_post($page->post_parent);
-      array_unshift($path, '<a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a>');
-   }
-   return implode(' > ', $path);
-}
-
-function list_child_pages() {
+function astc_list_child_pages() {
    global $post;
    $child_pages = get_pages(array(
       'child_of' => $post->ID,
@@ -66,6 +39,4 @@ function list_child_pages() {
 
    return $output ? $output : '<p>No child pages found.</p>';
 }
-add_shortcode('list_child_pages', 'list_child_pages');
-
-// [list_child_pages]
+add_shortcode('list_child_pages', 'astc_list_child_pages');

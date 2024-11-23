@@ -1,7 +1,7 @@
 <?php
 
 // Load CDN javascript library in document head in CF7 edit page
-add_action('admin_head', function() {
+add_action('admin_head', function () {
    echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/ace.js" integrity="sha512-oz/97HdPI510jvvYzVqE2tzz+jWpvUeVkK5OT0S2kPZOxuR+9cE8zT1V6UgwtRG71ThICBEtkPEzN5tfP/YeYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
    echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/mode-html.min.js" integrity="sha512-XGHrDrpn23J6mbzYjpOgXXnGIpNRiegMTu+irRxE9KofOh3lnGNBW4q9x8J8ppempFTWVIEJzxwarbV2/M1lCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
    echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/mode-css.min.js" integrity="sha512-q2Qu7dOhudjAQ8wvsLOsZ1NyUhOPAeGL/jzO1f45NMFGSv9F6sgDyzWa00LCVBWg/p84nGM/NHOX4bO1ctbkKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
@@ -15,7 +15,7 @@ add_action('admin_head', function() {
 
 
 // Load custom javascript in document footer in CF7 edit page
-add_action('admin_footer', function() {
-   echo '<script src="' . get_stylesheet_directory_uri() . '/scripts/cf7-editor.js"></script>';
+add_action('admin_footer', function () {
+   echo '<script src="' . get_stylesheet_directory_uri() . '/scripts/cf7-ace-editor-config.js"></script>';
    echo '<style>.tag-generator-panel input.insert-tag { display: none; }</style>';
 });
